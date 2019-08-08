@@ -1,0 +1,39 @@
+*** SPICE deck for cell Half_Adder{sch} from library Project-2
+*** Created on Fri Apr 05, 2019 09:57:24
+*** Last revised on Fri Apr 05, 2019 11:50:16
+*** Written on Fri Apr 05, 2019 11:50:21 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: Project-2:Half_Adder{sch}
+Mnmos@2 net@33 X net@68 gnd N L=0.7U W=1.75U
+Mnmos@3 net@68 Y gnd gnd N L=0.7U W=1.75U
+Mnmos@4 CO net@33 net@29 gnd N L=0.7U W=1.75U
+Mnmos@5 net@29 net@33 gnd gnd N L=0.7U W=1.75U
+Mnmos@6 net@48 X net@51 gnd N L=0.7U W=1.75U
+Mnmos@7 net@51 net@33 gnd gnd N L=0.7U W=1.75U
+Mnmos@8 net@24 net@33 net@61 gnd N L=0.7U W=1.75U
+Mnmos@9 net@61 Y gnd gnd N L=0.7U W=1.75U
+Mnmos@10 SUM net@48 net@95 gnd N L=0.7U W=1.75U
+Mnmos@11 net@95 net@24 gnd gnd N L=0.7U W=1.75U
+Mpmos@2 net@33 X vdd vdd P L=0.7U W=3.5U
+Mpmos@3 net@33 Y vdd vdd P L=0.7U W=3.5U
+Mpmos@4 CO net@33 vdd vdd P L=0.7U W=3.5U
+Mpmos@5 CO net@33 vdd vdd P L=0.7U W=3.5U
+Mpmos@6 net@48 X vdd vdd P L=0.7U W=3.5U
+Mpmos@7 net@48 net@33 vdd vdd P L=0.7U W=3.5U
+Mpmos@8 net@24 net@33 vdd vdd P L=0.7U W=3.5U
+Mpmos@9 net@24 Y vdd vdd P L=0.7U W=3.5U
+Mpmos@10 SUM net@48 vdd vdd P L=0.7U W=3.5U
+Mpmos@11 SUM net@24 vdd vdd P L=0.7U W=3.5U
+
+* Spice Code nodes in cell cell 'Project-2:Half_Adder{sch}'
+VDD VDD 0 DC 3.3 
+VGND GND 0 DC 0
+VIN1 X 0 PULSE(3.3 0 0 10n 5n 250n 500n)
+VIN2 Y 0 PULSE(3.3 0 0 10n 5n 500n 1000n)
+.TRAN 0 1000n
+.include C:\electric\MOS_model.txt
+.END

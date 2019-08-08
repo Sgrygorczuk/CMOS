@@ -1,0 +1,17 @@
+cdlInKeys = list(nil
+    'searchPath             "TEEST.cdl"
+    'cdlFile                "C:\electric\Libarires\TEEST.cdl"
+    'userSkillFile          ""
+    'opusLib                ""
+    'primaryCell            "TEEST"
+    'caseSensitivity        "lower"
+    'hierarchy              "flatten"
+    'cellTable              ""
+    'viewName               "netlist"
+    'viewType               ""
+    'pr                     nil
+    'skipDevice             nil
+    'schemaLib              "sample"
+    'refLib                 ""
+    'globalNodeExpand       "full"
+)

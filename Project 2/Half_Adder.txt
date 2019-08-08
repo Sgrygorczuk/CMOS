@@ -1,0 +1,25 @@
+| units: 35.0 tech: mocmos format: SU
+| IRSIM file for cell Half_Adder{sch} from library Project-2
+| Created on Fri Apr 05, 2019 09:57:24
+| Last revised on Fri Apr 05, 2019 11:50:16
+| Written on Fri Apr 05, 2019 14:05:39 by Electric VLSI Design System, version 9.07
+n X net@68 net@33 2 5 44.5 -3.5 g=S_gnd s=A_5,P_12 d=A_5,P_12
+n Y gnd net@68 2 5 44.5 -9.5 g=S_gnd s=A_5,P_12 d=A_5,P_12
+n net@33 net@29 CO 2 5 72.5 -44 g=S_gnd s=A_5,P_12 d=A_5,P_12
+n net@33 gnd net@29 2 5 72.5 -50 g=S_gnd s=A_5,P_12 d=A_5,P_12
+n X net@51 net@48 2 5 73.5 23 g=S_gnd s=A_5,P_12 d=A_5,P_12
+n net@33 gnd net@51 2 5 73.5 17 g=S_gnd s=A_5,P_12 d=A_5,P_12
+n net@33 net@61 net@24 2 5 72.5 -11.5 g=S_gnd s=A_5,P_12 d=A_5,P_12
+n Y gnd net@61 2 5 72.5 -17.5 g=S_gnd s=A_5,P_12 d=A_5,P_12
+n net@48 net@95 SUM 2 5 98.5 6 g=S_gnd s=A_5,P_12 d=A_5,P_12
+n net@24 gnd net@95 2 5 98.5 0 g=S_gnd s=A_5,P_12 d=A_5,P_12
+p X vdd net@33 2 10 40.5 4.5 g=S_vdd s=A_10,P_22 d=A_10,P_22
+p Y vdd net@33 2 10 50.5 4.5 g=S_vdd s=A_10,P_22 d=A_10,P_22
+p net@33 vdd CO 2 10 68.5 -36 g=S_vdd s=A_10,P_22 d=A_10,P_22
+p net@33 vdd CO 2 10 78.5 -36 g=S_vdd s=A_10,P_22 d=A_10,P_22
+p X vdd net@48 2 10 69.5 31 g=S_vdd s=A_10,P_22 d=A_10,P_22
+p net@33 vdd net@48 2 10 79.5 31 g=S_vdd s=A_10,P_22 d=A_10,P_22
+p net@33 vdd net@24 2 10 68.5 -3.5 g=S_vdd s=A_10,P_22 d=A_10,P_22
+p Y vdd net@24 2 10 78.5 -3.5 g=S_vdd s=A_10,P_22 d=A_10,P_22
+p net@48 vdd SUM 2 10 94.5 14 g=S_vdd s=A_10,P_22 d=A_10,P_22
+p net@24 vdd SUM 2 10 104.5 14 g=S_vdd s=A_10,P_22 d=A_10,P_22

@@ -1,0 +1,27 @@
+*** SPICE deck for cell HAHA{lay} from library Project-2
+*** Created on Fri Apr 05, 2019 22:32:03
+*** Last revised on Fri Apr 05, 2019 22:54:34
+*** Written on Fri Apr 05, 2019 22:54:38 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** TOP LEVEL CELL: HAHA{lay}
+Mnmos@0 net@44 D gnd gnd N L=0.7U W=3.5U AS=16.538P AD=8.269P PS=21.7U PD=11.725U
+Mnmos@1 gnd B net@11 gnd N L=0.7U W=3.5U AS=3.063P AD=16.538P PS=5.25U PD=21.7U
+Mnmos@2 net@11 C Out gnd N L=0.7U W=3.5U AS=5.666P AD=3.063P PS=8.487U PD=5.25U
+Mnmos@3 Out A net@44 gnd N L=0.7U W=3.5U AS=8.269P AD=5.666P PS=11.725U PD=8.487U
+Mpmos@0 Out D net@43 vdd P L=0.7U W=3.5U AS=2.756P AD=5.666P PS=5.075U PD=8.487U
+Mpmos@1 net@43 B vdd vdd P L=0.7U W=3.5U AS=10.719P AD=2.756P PS=14.875U PD=5.075U
+Mpmos@2 vdd C pmos@2_diff-top vdd P L=0.7U W=3.5U AS=3.675P AD=10.719P PS=9.1U PD=14.875U
+Mpmos@3 pmos@3_diff-bottom A Out vdd P L=0.7U W=3.5U AS=5.666P AD=3.675P PS=8.487U PD=9.1U
+
+* Spice Code nodes in cell cell 'HAHA{lay}'
+VDD VDD 0 DC 3.3 
+VGND GND 0 DC 0
+VIN1 A 0 PULSE(3.3 0 10n 10n 10n 250n 500n)
+VIN2 B 0 PULSE(3.3 0 10n 10n 10n 500n 1000n)
+VIN3 C 0 PULSE(0 3.3 10n 10n 10n 250n 500n)
+VIN4 D 0 PULSE(0 3.3 10n 10n 10n 500n 1000n)
+.TRAN 0 1000n
+.include C:\electric\MOS_model.txt
+.END

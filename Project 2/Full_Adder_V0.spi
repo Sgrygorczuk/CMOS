@@ -1,0 +1,56 @@
+*** SPICE deck for cell Full_Adder_V0{sch} from library Project-2
+*** Created on Fri Apr 05, 2019 17:29:59
+*** Last revised on Fri Apr 05, 2019 17:45:56
+*** Written on Fri Apr 05, 2019 17:46:16 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: Full_Adder_V0{sch}
+Mnmos@0 net@30 net@0 net@58 gnd N L=0.7U W=1.75U
+Mnmos@1 net@58 CI gnd gnd N L=0.7U W=1.75U
+Mnmos@2 CO net@30 net@15 gnd N L=0.7U W=1.75U
+Mnmos@3 net@15 net@19 gnd gnd N L=0.7U W=1.75U
+Mnmos@4 net@2 net@0 net@39 gnd N L=0.7U W=1.75U
+Mnmos@5 net@39 net@30 gnd gnd N L=0.7U W=1.75U
+Mnmos@6 net@5 net@30 net@50 gnd N L=0.7U W=1.75U
+Mnmos@7 net@50 CI gnd gnd N L=0.7U W=1.75U
+Mnmos@8 SUM net@2 net@88 gnd N L=0.7U W=1.75U
+Mnmos@9 net@88 net@5 gnd gnd N L=0.7U W=1.75U
+Mnmos@10 net@19 X net@125 gnd N L=0.7U W=1.75U
+Mnmos@11 net@125 Y gnd gnd N L=0.7U W=1.75U
+Mnmos@12 net@96 X net@104 gnd N L=0.7U W=1.75U
+Mnmos@13 net@104 net@19 gnd gnd N L=0.7U W=1.75U
+Mnmos@14 net@97 net@19 net@117 gnd N L=0.7U W=1.75U
+Mnmos@15 net@117 Y gnd gnd N L=0.7U W=1.75U
+Mnmos@16 net@155 net@96 net@158 gnd N L=0.7U W=1.75U
+Mnmos@17 net@158 net@97 gnd gnd N L=0.7U W=1.75U
+Mpmos@0 net@30 net@155 vdd vdd P L=0.7U W=3.5U
+Mpmos@1 net@30 CI vdd vdd P L=0.7U W=3.5U
+Mpmos@2 CO net@30 vdd vdd P L=0.7U W=3.5U
+Mpmos@3 CO net@19 vdd vdd P L=0.7U W=3.5U
+Mpmos@4 net@2 net@0 vdd vdd P L=0.7U W=3.5U
+Mpmos@5 net@2 net@30 vdd vdd P L=0.7U W=3.5U
+Mpmos@6 net@5 net@30 vdd vdd P L=0.7U W=3.5U
+Mpmos@7 net@5 CI vdd vdd P L=0.7U W=3.5U
+Mpmos@8 SUM net@2 vdd vdd P L=0.7U W=3.5U
+Mpmos@9 SUM net@5 vdd vdd P L=0.7U W=3.5U
+Mpmos@10 net@19 X vdd vdd P L=0.7U W=3.5U
+Mpmos@11 net@19 Y vdd vdd P L=0.7U W=3.5U
+Mpmos@12 net@96 X vdd vdd P L=0.7U W=3.5U
+Mpmos@13 net@96 net@19 vdd vdd P L=0.7U W=3.5U
+Mpmos@14 net@97 net@19 vdd vdd P L=0.7U W=3.5U
+Mpmos@15 net@97 Y vdd vdd P L=0.7U W=3.5U
+Mpmos@16 net@155 net@96 vdd vdd P L=0.7U W=3.5U
+Mpmos@17 net@155 net@97 vdd vdd P L=0.7U W=3.5U
+
+* Spice Code nodes in cell cell 'Full_Adder_V0{sch}'
+VDD VDD 0 DC 3.3 
+VGND GND 0 DC 0
+VIN1 X 0 PULSE(3.3 0 10n 10n 10n 250n 500n)
+VIN2 Y 0 PULSE(3.3 0 10n 10n 10n 500n 1000n)
+VIN3 CI 0 PULSE(3.3 0 10n 10n 10n 1000n 2000n)
+.TRAN 0 2000n
+.include C:\electric\MOS_model.txt
+.END

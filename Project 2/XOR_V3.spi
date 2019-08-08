@@ -1,0 +1,31 @@
+*** SPICE deck for cell XOR_V3{lay} from library Project-2
+*** Created on Fri Apr 05, 2019 19:43:10
+*** Last revised on Sat Apr 06, 2019 07:27:22
+*** Written on Sat Apr 06, 2019 19:14:09 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** TOP LEVEL CELL: XOR_V3{lay}
+Mnmos@16 net@291 X gnd gnd N L=0.7U W=1.75U AS=15.925P AD=4.288P PS=23.8U PD=8.4U
+Mnmos@17 net@288 Y gnd gnd N L=0.7U W=1.75U AS=15.925P AD=4.288P PS=23.8U PD=8.4U
+Mnmos@18 net@265 net@288 gnd gnd N L=0.7U W=1.75U AS=15.925P AD=3.981P PS=23.8U PD=8.05U
+Mnmos@19 gnd Y net@262 gnd N L=0.7U W=1.75U AS=1.531P AD=15.925P PS=3.5U PD=23.8U
+Mnmos@20 net@262 net@291 net@263 gnd N L=0.7U W=1.75U AS=2.45P AD=1.531P PS=4.55U PD=3.5U
+Mnmos@21 net@263 X net@265 gnd N L=0.7U W=1.75U AS=3.981P AD=2.45P PS=8.05U PD=4.55U
+Mnmos@22 F net@263 gnd gnd N L=0.7U W=1.75U AS=15.925P AD=4.288P PS=23.8U PD=8.4U
+Mpmos@13 net@291 X vdd vdd P L=0.7U W=1.75U AS=15.268P AD=4.288P PS=24.45U PD=8.4U
+Mpmos@14 net@288 Y vdd vdd P L=0.7U W=1.75U AS=15.268P AD=4.288P PS=24.45U PD=8.4U
+Mpmos@15 net@279 net@288 vdd vdd P L=0.7U W=1.75U AS=15.268P AD=2.909P PS=24.45U PD=5.075U
+Mpmos@16 net@263 Y net@279 vdd P L=0.7U W=1.75U AS=2.909P AD=2.45P PS=5.075U PD=4.55U
+Mpmos@17 vdd X net@279 vdd P L=0.7U W=1.75U AS=2.909P AD=15.268P PS=5.075U PD=24.45U
+Mpmos@18 net@279 net@291 net@263 vdd P L=0.7U W=1.75U AS=2.45P AD=2.909P PS=4.55U PD=5.075U
+Mpmos@19 F net@263 vdd vdd P L=0.7U W=1.75U AS=15.268P AD=4.288P PS=24.45U PD=8.4U
+
+* Spice Code nodes in cell cell 'XOR_V3{lay}'
+VDD VDD 0 DC 3.3 
+VGND GND 0 DC 0
+VIN X 0 PULSE(3.3 0 0 100p 100p 10n 20n)
+VIN2 Y 0 PULSE(3.3 0 0 100p 100p 20n 40n)
+.TRAN 0 50n
+.include C:\electric\MOS_model.txt
+.END

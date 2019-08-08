@@ -1,0 +1,29 @@
+*** SPICE deck for cell XOR_PART_2{lay} from library Project-2
+*** Created on Sat Apr 06, 2019 20:08:55
+*** Last revised on Sun Apr 07, 2019 13:47:55
+*** Written on Sun Apr 07, 2019 13:48:00 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** TOP LEVEL CELL: XOR_PART_2{lay}
+Mnmos@0 net@13 net@1 gnd gnd N L=0.7U W=1.75U AS=15.695P AD=3.828P PS=23.188U PD=7.875U
+Mnmos@1 gnd Y net@27 gnd N L=0.7U W=1.75U AS=1.531P AD=15.695P PS=3.5U PD=23.188U
+Mnmos@2 net@27 X F gnd N L=0.7U W=1.75U AS=2.527P AD=1.531P PS=4.637U PD=3.5U
+Mnmos@3 F net@44 net@13 gnd N L=0.7U W=1.75U AS=3.828P AD=2.527P PS=7.875U PD=4.637U
+Mnmos@4 net@44 X gnd gnd N L=0.7U W=1.75U AS=15.695P AD=4.288P PS=23.188U PD=8.4U
+Mnmos@5 net@1 Y gnd gnd N L=0.7U W=1.75U AS=15.695P AD=4.441P PS=23.188U PD=8.575U
+Mpmos@0 net@0 net@1 vdd vdd P L=0.7U W=1.75U AS=16.231P AD=2.909P PS=25.55U PD=5.075U
+Mpmos@1 vdd net@44 net@0 vdd P L=0.7U W=1.75U AS=2.909P AD=16.231P PS=5.075U PD=25.55U
+Mpmos@2 F Y net@0 vdd P L=0.7U W=1.75U AS=2.909P AD=2.527P PS=5.075U PD=4.637U
+Mpmos@3 net@0 X F vdd P L=0.7U W=1.75U AS=2.527P AD=2.909P PS=4.637U PD=5.075U
+Mpmos@4 net@44 X vdd vdd P L=0.7U W=1.75U AS=16.231P AD=4.288P PS=25.55U PD=8.4U
+Mpmos@5 net@1 Y vdd vdd P L=0.7U W=1.75U AS=16.231P AD=4.441P PS=25.55U PD=8.575U
+
+* Spice Code nodes in cell cell 'XOR_PART_2{lay}'
+VDD VDD 0 DC 3.3 
+VGND GND 0 DC 0
+VIN X 0 PULSE(3.3 0 0 100p 100p 10n 20n)
+VIN2 Y 0 PULSE(3.3 0 0 100p 100p 20n 40n)
+.TRAN 0 40n
+.include C:\electric\MOS_model.txt
+.END

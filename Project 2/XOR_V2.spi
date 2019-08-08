@@ -1,0 +1,35 @@
+*** SPICE deck for cell XOR_V2{sch} from library Project-2
+*** Created on Fri Apr 05, 2019 17:25:20
+*** Last revised on Fri Apr 05, 2019 17:28:56
+*** Written on Fri Apr 05, 2019 17:29:02 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: XOR_V2{sch}
+Mnmos@0 net@0 X net@7 gnd N L=0.7U W=1.75U
+Mnmos@1 net@7 net@13 gnd gnd N L=0.7U W=1.75U
+Mnmos@2 net@1 net@51 net@17 gnd N L=0.7U W=1.75U
+Mnmos@3 net@17 Y gnd gnd N L=0.7U W=1.75U
+Mnmos@4 Out net@0 net@34 gnd N L=0.7U W=1.75U
+Mnmos@5 net@34 net@1 gnd gnd N L=0.7U W=1.75U
+Mnmos@6 net@51 X gnd gnd N L=0.7U W=1.75U
+Mnmos@7 net@13 Y gnd gnd N L=0.7U W=1.75U
+Mpmos@0 net@0 X vdd vdd P L=0.7U W=3.5U
+Mpmos@1 net@0 net@13 vdd vdd P L=0.7U W=3.5U
+Mpmos@2 net@1 net@51 vdd vdd P L=0.7U W=3.5U
+Mpmos@3 net@1 Y vdd vdd P L=0.7U W=3.5U
+Mpmos@4 Out net@0 vdd vdd P L=0.7U W=3.5U
+Mpmos@5 Out net@1 vdd vdd P L=0.7U W=3.5U
+Mpmos@6 net@51 X vdd vdd P L=0.7U W=3.5U
+Mpmos@7 net@13 Y vdd vdd P L=0.7U W=3.5U
+
+* Spice Code nodes in cell cell 'XOR_V2{sch}'
+VDD VDD 0 DC 3.3 
+VGND GND 0 DC 0
+VIN1 X 0 PULSE(3.3 0 10n 10n 10n 250n 500n)
+VIN2 Y 0 PULSE(3.3 0 10n 10n 10n 500n 1000n)
+.TRAN 0 1000n
+.include C:\electric\MOS_model.txt
+.END

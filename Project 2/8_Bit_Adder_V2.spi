@@ -1,0 +1,80 @@
+*** SPICE deck for cell 8_Bit_Adder_V2{lay} from library Project-2
+*** Created on Sun Apr 07, 2019 15:14:48
+*** Last revised on Sun Apr 07, 2019 20:20:15
+*** Written on Sun Apr 07, 2019 21:01:21 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** SUBCIRCUIT Project-2__Full_Adder_V4 FROM CELL Full_Adder_V4{lay}
+.SUBCKT Project-2__Full_Adder_V4 CI CO gnd SUM vdd X Y
+Mnmos@0 net@10 net@13 gnd gnd N L=0.7U W=1.75U AS=17.512P AD=3.828P PS=25.741U PD=7.875U
+Mnmos@1 gnd X net@27 gnd N L=0.7U W=1.75U AS=1.531P AD=17.512P PS=3.5U PD=25.741U
+Mnmos@2 net@27 Y net@29 gnd N L=0.7U W=1.75U AS=2.527P AD=1.531P PS=4.637U PD=3.5U
+Mnmos@3 net@29 net@0 net@10 gnd N L=0.7U W=1.75U AS=3.828P AD=2.527P PS=7.875U PD=4.637U
+Mnmos@4 net@0 Y gnd gnd N L=0.7U W=1.75U AS=17.512P AD=4.288P PS=25.741U PD=8.4U
+Mnmos@5 net@13 X gnd gnd N L=0.7U W=1.75U AS=17.512P AD=4.441P PS=25.741U PD=8.575U
+Mnmos@6 net@94 net@97 gnd gnd N L=0.7U W=1.75U AS=17.512P AD=3.828P PS=25.741U PD=7.875U
+Mnmos@7 gnd net@29 net@112 gnd N L=0.7U W=1.75U AS=1.531P AD=17.512P PS=3.5U PD=25.741U
+Mnmos@8 net@112 CI SUM gnd N L=0.7U W=1.75U AS=2.527P AD=1.531P PS=4.637U PD=3.5U
+Mnmos@9 SUM net@92 net@94 gnd N L=0.7U W=1.75U AS=3.828P AD=2.527P PS=7.875U PD=4.637U
+Mnmos@10 net@92 CI gnd gnd N L=0.7U W=1.75U AS=17.512P AD=4.288P PS=25.741U PD=8.4U
+Mnmos@11 net@97 net@29 gnd gnd N L=0.7U W=1.75U AS=17.512P AD=4.441P PS=25.741U PD=8.575U
+Mnmos@16 net@240 Y gnd gnd N L=0.7U W=1.75U AS=17.512P AD=1.317P PS=25.741U PD=3.325U
+Mnmos@17 net@238 X net@240 gnd N L=0.7U W=1.75U AS=1.317P AD=2.96P PS=3.325U PD=5.717U
+Mnmos@18 net@283 net@29 gnd gnd N L=0.7U W=1.75U AS=17.512P AD=1.317P PS=25.741U PD=3.325U
+Mnmos@19 net@281 CI net@283 gnd N L=0.7U W=1.75U AS=1.317P AD=2.96P PS=3.325U PD=5.717U
+Mnmos@20 net@308 net@238 gnd gnd N L=0.7U W=1.75U AS=17.512P AD=1.317P PS=25.741U PD=3.325U
+Mnmos@21 CO net@281 net@308 gnd N L=0.7U W=1.75U AS=1.317P AD=2.96P PS=3.325U PD=5.717U
+Mpmos@0 net@17 net@13 vdd vdd P L=0.7U W=1.75U AS=13.803P AD=2.909P PS=22.025U PD=5.075U
+Mpmos@1 vdd net@0 net@17 vdd P L=0.7U W=1.75U AS=2.909P AD=13.803P PS=5.075U PD=22.025U
+Mpmos@2 net@29 X net@17 vdd P L=0.7U W=1.75U AS=2.909P AD=2.527P PS=5.075U PD=4.637U
+Mpmos@3 net@17 Y net@29 vdd P L=0.7U W=1.75U AS=2.527P AD=2.909P PS=4.637U PD=5.075U
+Mpmos@4 net@0 Y vdd vdd P L=0.7U W=1.75U AS=13.803P AD=4.288P PS=22.025U PD=8.4U
+Mpmos@5 net@13 X vdd vdd P L=0.7U W=1.75U AS=13.803P AD=4.441P PS=22.025U PD=8.575U
+Mpmos@6 net@101 net@97 vdd vdd P L=0.7U W=1.75U AS=13.803P AD=2.909P PS=22.025U PD=5.075U
+Mpmos@7 vdd net@92 net@101 vdd P L=0.7U W=1.75U AS=2.909P AD=13.803P PS=5.075U PD=22.025U
+Mpmos@8 SUM net@29 net@101 vdd P L=0.7U W=1.75U AS=2.909P AD=2.527P PS=5.075U PD=4.637U
+Mpmos@9 net@101 CI SUM vdd P L=0.7U W=1.75U AS=2.527P AD=2.909P PS=4.637U PD=5.075U
+Mpmos@10 net@92 CI vdd vdd P L=0.7U W=1.75U AS=13.803P AD=4.288P PS=22.025U PD=8.4U
+Mpmos@11 net@97 net@29 vdd vdd P L=0.7U W=1.75U AS=13.803P AD=4.441P PS=22.025U PD=8.575U
+Mpmos@16 net@238 Y vdd vdd P L=0.7U W=1.75U AS=13.803P AD=2.96P PS=22.025U PD=5.717U
+Mpmos@17 vdd X net@238 vdd P L=0.7U W=1.75U AS=2.96P AD=13.803P PS=5.717U PD=22.025U
+Mpmos@18 net@281 net@29 vdd vdd P L=0.7U W=1.75U AS=13.803P AD=2.96P PS=22.025U PD=5.717U
+Mpmos@19 vdd CI net@281 vdd P L=0.7U W=1.75U AS=2.96P AD=13.803P PS=5.717U PD=22.025U
+Mpmos@20 CO net@238 vdd vdd P L=0.7U W=1.75U AS=13.803P AD=2.96P PS=22.025U PD=5.717U
+Mpmos@21 vdd net@281 CO vdd P L=0.7U W=1.75U AS=2.96P AD=13.803P PS=5.717U PD=22.025U
+.ENDS Project-2__Full_Adder_V4
+
+*** TOP LEVEL CELL: 8_Bit_Adder_V2{lay}
+XFull_Add@0 CI net@0 gnd F0 vdd X0 Y0 Project-2__Full_Adder_V4
+XFull_Add@1 net@54 net@9 gnd F2 vdd X2 Y2 Project-2__Full_Adder_V4
+XFull_Add@2 net@0 net@54 gnd F1 vdd X1 Y1 Project-2__Full_Adder_V4
+XFull_Add@3 net@9 net@55 gnd F3 vdd X3 Y3 Project-2__Full_Adder_V4
+XFull_Add@8 net@55 net@17 gnd F4 vdd X4 Y4 Project-2__Full_Adder_V4
+XFull_Add@9 net@67 net@11 gnd F6 vdd X6 Y6 Project-2__Full_Adder_V4
+XFull_Add@10 net@17 net@67 gnd F5 vdd X5 Y5 Project-2__Full_Adder_V4
+XFull_Add@11 net@11 CO gnd F7 vdd X7 Y7 Project-2__Full_Adder_V4
+
+* Spice Code nodes in cell cell '8_Bit_Adder_V2{lay}'
+VDD VDD 0 DC 3.3 
+VGND GND 0 DC 0
+VIN3 CI 0 PULSE(3.3 0 0 100p 100p 80n 160n)
+VIN X0 0 PULSE(3.3 0 0 100p 100p 10n 20n)
+VIN2 Y0 0 PULSE(0 3.3 100p 100p 40n 80n)
+VIN4 X1 0 PULSE(3.3 0 0 100p 100p 80n 160n)
+VIN5 Y1 0 PULSE(0 3.3 100p 100p 40n 80n)
+VIN6 X2 0 PULSE(3.3 0 0 100p 100p 80n 160n)
+VIN7 Y2 0 PULSE(0 3.3 100p 100p 40n 80n)
+VIN8 X3 0 PULSE(3.3 0 0 100p 100p 80n 160n)
+VIN9 Y3 0 PULSE(0 3.3 100p 100p 40n 80n)
+VIN10 X4 0 PULSE(3.3 0 0 100p 100p 80n 160n)
+VIN11 Y4 0 PULSE(0 3.3 100p 100p 40n 80n)
+VIN12 X5 0 PULSE(3.3 0 0 100p 100p 80n 160n)
+VIN13 Y5 0 PULSE(0 3.3 100p 100p 40n 80n)
+VIN14 X6 0 PULSE(3.3 0 0 100p 100p 80n 160n)
+VIN15 Y6 0 PULSE(0 3.3 100p 100p 40n 80n)
+VIN16 X7 0 PULSE(3.3 0 0 100p 100p 80n 160n)
+VIN17 Y7 0 PULSE(3.3 0 0 100p 100p 80n 160n)
+.TRAN 0 40n
+.include C:\electric\MOS_model.txt
+.END

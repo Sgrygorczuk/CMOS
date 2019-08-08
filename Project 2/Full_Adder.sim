@@ -1,0 +1,41 @@
+| units: 35.0 tech: mocmos format: SU
+| IRSIM file for cell Full_Adder{sch} from library Project-2
+| Created on Fri Apr 05, 2019 09:13:44
+| Last revised on Fri Apr 05, 2019 12:01:42
+| Written on Fri Apr 05, 2019 13:10:09 by Electric VLSI Design System, version 9.07
+n net@235 net@289 net@234 2 5 -8 15.5 g=S_gnd s=A_5,P_12 d=A_5,P_12
+n CI gnd net@289 2 5 -8 9.5 g=S_gnd s=A_5,P_12 d=A_5,P_12
+n net@234 net@250 CO 2 5 20 -25 g=S_gnd s=A_5,P_12 d=A_5,P_12
+n net@254 gnd net@250 2 5 20 -31 g=S_gnd s=A_5,P_12 d=A_5,P_12
+n net@235 net@272 net@229 2 5 21 42 g=S_gnd s=A_5,P_12 d=A_5,P_12
+n net@234 gnd net@272 2 5 21 36 g=S_gnd s=A_5,P_12 d=A_5,P_12
+n net@234 net@282 net@228 2 5 20 7.5 g=S_gnd s=A_5,P_12 d=A_5,P_12
+n CI gnd net@282 2 5 20 1.5 g=S_gnd s=A_5,P_12 d=A_5,P_12
+n net@229 net@316 SUM 2 5 46 25 g=S_gnd s=A_5,P_12 d=A_5,P_12
+n net@228 gnd net@316 2 5 46 19 g=S_gnd s=A_5,P_12 d=A_5,P_12
+n X net@382 net@254 2 5 -92 10 g=S_gnd s=A_5,P_12 d=A_5,P_12
+n Y gnd net@382 2 5 -92 4 g=S_gnd s=A_5,P_12 d=A_5,P_12
+n X net@365 net@322 2 5 -63 36.5 g=S_gnd s=A_5,P_12 d=A_5,P_12
+n net@254 gnd net@365 2 5 -63 30.5 g=S_gnd s=A_5,P_12 d=A_5,P_12
+n net@254 net@375 net@321 2 5 -64 2 g=S_gnd s=A_5,P_12 d=A_5,P_12
+n Y gnd net@375 2 5 -64 -4 g=S_gnd s=A_5,P_12 d=A_5,P_12
+n net@322 net@409 net@235 2 5 -38 19.5 g=S_gnd s=A_5,P_12 d=A_5,P_12
+n net@321 gnd net@409 2 5 -38 13.5 g=S_gnd s=A_5,P_12 d=A_5,P_12
+p net@235 vdd net@234 2 10 -12 23.5 g=S_vdd s=A_10,P_22 d=A_10,P_22
+p CI vdd net@234 2 10 -2 23.5 g=S_vdd s=A_10,P_22 d=A_10,P_22
+p net@234 vdd CO 2 10 16 -17 g=S_vdd s=A_10,P_22 d=A_10,P_22
+p net@254 vdd CO 2 10 26 -17 g=S_vdd s=A_10,P_22 d=A_10,P_22
+p net@235 vdd net@229 2 10 17 50 g=S_vdd s=A_10,P_22 d=A_10,P_22
+p net@234 vdd net@229 2 10 27 50 g=S_vdd s=A_10,P_22 d=A_10,P_22
+p net@234 vdd net@228 2 10 16 15.5 g=S_vdd s=A_10,P_22 d=A_10,P_22
+p CI vdd net@228 2 10 26 15.5 g=S_vdd s=A_10,P_22 d=A_10,P_22
+p net@229 vdd SUM 2 10 42 33 g=S_vdd s=A_10,P_22 d=A_10,P_22
+p net@228 vdd SUM 2 10 52 33 g=S_vdd s=A_10,P_22 d=A_10,P_22
+p X vdd net@254 2 10 -96 18 g=S_vdd s=A_10,P_22 d=A_10,P_22
+p Y vdd net@254 2 10 -86 18 g=S_vdd s=A_10,P_22 d=A_10,P_22
+p X vdd net@322 2 10 -67 44.5 g=S_vdd s=A_10,P_22 d=A_10,P_22
+p net@254 vdd net@322 2 10 -57 44.5 g=S_vdd s=A_10,P_22 d=A_10,P_22
+p net@254 vdd net@321 2 10 -68 10 g=S_vdd s=A_10,P_22 d=A_10,P_22
+p Y vdd net@321 2 10 -58 10 g=S_vdd s=A_10,P_22 d=A_10,P_22
+p net@322 vdd net@235 2 10 -42 27.5 g=S_vdd s=A_10,P_22 d=A_10,P_22
+p net@321 vdd net@235 2 10 -32 27.5 g=S_vdd s=A_10,P_22 d=A_10,P_22

@@ -1,0 +1,27 @@
+*** SPICE deck for cell Test{lay} from library Project-2
+*** Created on Fri Apr 05, 2019 21:13:09
+*** Last revised on Fri Apr 05, 2019 23:37:26
+*** Written on Fri Apr 05, 2019 23:37:31 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** TOP LEVEL CELL: Test{lay}
+Mnmos@10 gnd D net@330 gnd N L=0.7U W=1.75U AS=4.9P AD=9.494P PS=9.1U PD=14.35U
+Mnmos@11 net@361 B gnd gnd N L=0.7U W=1.75U AS=9.494P AD=1.838P PS=14.35U PD=3.85U
+Mnmos@12 Out C net@361 gnd N L=0.7U W=1.75U AS=1.838P AD=3.369P PS=3.85U PD=5.6U
+Mnmos@13 net@330 A Out gnd N L=0.7U W=1.75U AS=3.369P AD=4.9P PS=5.6U PD=9.1U
+Mpmos@10 net@320 D vdd vdd P L=0.7U W=1.75U AS=17.15P AD=3.369P PS=24.85U PD=5.6U
+Mpmos@11 Out B net@320 vdd P L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mpmos@12 net@320 C Out vdd P L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mpmos@13 vdd A net@320 vdd P L=0.7U W=1.75U AS=3.369P AD=17.15P PS=5.6U PD=24.85U
+
+* Spice Code nodes in cell cell 'Test{lay}'
+VDD VDD 0 DC 3.3 
+VGND GND 0 DC 0
+VIN1 A 0 PULSE(3.3 0 10n 10n 10n 250n 500n)
+VIN2 B 0 PULSE(3.3 0 10n 10n 10n 500n 1000n)
+VIN3 C 0 PULSE(0 3.3 10n 10n 10n 250n 500n)
+VIN4 D 0 PULSE(0 3.3 10n 10n 10n 500n 1000n)
+.TRAN 0 1000n
+.include C:\electric\MOS_model.txt
+.END
