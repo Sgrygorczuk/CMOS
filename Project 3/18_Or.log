@@ -1,0 +1,13 @@
+Circuit: *** SPICE deck for cell 18_Or{lay} from library Project_3
+
+Vgnd: both pins shorted together -- ignoring.
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Error on line 66 : vin19 i17 pulse(3.3 0 0 1n 1n 1310720n 2621440n)
+	 Unknown parameter "0"
+WARNING: Node PULSE is floating.
+
+WARNING: Less than two connections to node PULSE.  This node is used by VIN19.
+Direct Newton iteration for .op point succeeded.

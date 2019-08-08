@@ -1,0 +1,41 @@
+*** SPICE deck for cell C1{lay} from library Project_3
+*** Created on Fri May 10, 2019 13:51:03
+*** Last revised on Sun May 12, 2019 17:55:38
+*** Written on Sun May 12, 2019 17:55:42 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** SUBCIRCUIT Project_3__2_AND FROM CELL 2_AND{lay}
+.SUBCKT Project_3__2_AND gnd I0 I1 O vdd
+Mnmos@0 gnd I1 net@22 gnd N L=0.7U W=1.75U AS=3.369P AD=22.969P PS=5.6U PD=31.5U
+Mnmos@1 net@22 I0 net@0 gnd N L=0.7U W=1.75U AS=3.879P AD=3.369P PS=6.767U PD=5.6U
+Mnmos@2 O net@0 gnd gnd N L=0.7U W=1.75U AS=22.969P AD=4.288P PS=31.5U PD=8.4U
+Mpmos@0 vdd I1 net@0 vdd P L=0.7U W=1.75U AS=3.879P AD=19.396P PS=6.767U PD=24.267U
+Mpmos@1 net@0 I0 vdd vdd P L=0.7U W=1.75U AS=19.396P AD=3.879P PS=24.267U PD=6.767U
+Mpmos@2 O net@0 vdd vdd P L=0.7U W=1.75U AS=19.396P AD=4.288P PS=24.267U PD=8.4U
+.ENDS Project_3__2_AND
+*** WARNING: no ground connection for N-transistor wells in cell '2_Or{lay}'
+
+*** SUBCIRCUIT Project_3__2_Or FROM CELL 2_Or{lay}
+.SUBCKT Project_3__2_Or gnd I0 I1 O vdd
+Mnmos@0 O net@24 gnd gnd N L=0.7U W=1.75U AS=21.233P AD=4.9P PS=28.933U PD=9.1U
+Mnmos@1 gnd I0 net@24 gnd N L=0.7U W=1.75U AS=3.879P AD=21.233P PS=6.767U PD=28.933U
+Mnmos@2 net@24 I1 gnd gnd N L=0.7U W=1.75U AS=21.233P AD=3.879P PS=28.933U PD=6.767U
+Mpmos@0 O net@24 vdd vdd P L=0.7U W=1.75U AS=34.3P AD=4.9P PS=39.2U PD=9.1U
+Mpmos@1 vdd I0 net@37 vdd P L=0.7U W=1.75U AS=3.369P AD=34.3P PS=5.6U PD=39.2U
+Mpmos@2 net@37 I1 net@24 vdd P L=0.7U W=1.75U AS=3.879P AD=3.369P PS=6.767U PD=5.6U
+.ENDS Project_3__2_Or
+
+*** TOP LEVEL CELL: C1{lay}
+X_2_AND@2 gnd P0 C0 net@64 vdd Project_3__2_AND
+X_2_Or@1 gnd G0 net@64 C1 vdd Project_3__2_Or
+
+* Spice Code nodes in cell cell 'C1{lay}'
+VDD VDD 0 DC 3.3 
+VGND GND 0 DC 0
+VIN C0 0 PULSE(0 3.3 0 1n 1n 80n 160n)
+VIN1 P0 0 PULSE(0 3.3 0 1n 1n 00n 160n)
+VIN2 G0 0 PULSE(3.3 0 0 1n 1n 20n 40n)
+.TRAN 0 40n
+.include C:\electric\MOS_model.txt
+.END

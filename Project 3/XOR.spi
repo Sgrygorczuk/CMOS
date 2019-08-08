@@ -1,0 +1,31 @@
+*** SPICE deck for cell XOR{sch} from library Project_3
+*** Created on Sat May 04, 2019 20:45:36
+*** Last revised on Sat May 11, 2019 23:39:43
+*** Written on Sat May 11, 2019 23:39:48 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: XOR{sch}
+Mnmos@2 O net@39 net@55 gnd N L=0.7U W=1.75U
+Mnmos@3 O A net@95 gnd N L=0.7U W=1.75U
+Mnmos@4 net@55 net@46 gnd gnd N L=0.7U W=1.75U
+Mnmos@5 net@95 C gnd gnd N L=0.7U W=1.75U
+Mnmos@6 net@39 A gnd gnd N L=0.7U W=1.75U
+Mnmos@7 net@46 C gnd gnd N L=0.7U W=1.75U
+Mpmos@2 net@38 net@39 vdd vdd P L=0.7U W=1.75U
+Mpmos@3 net@38 net@46 vdd vdd P L=0.7U W=1.75U
+Mpmos@4 O A net@38 vdd P L=0.7U W=1.75U
+Mpmos@5 O C net@38 vdd P L=0.7U W=1.75U
+Mpmos@6 net@39 A vdd vdd P L=0.7U W=1.75U
+Mpmos@7 net@46 C vdd vdd P L=0.7U W=1.75U
+
+* Spice Code nodes in cell cell 'XOR{sch}'
+VDD VDD 0 DC 3.3 
+VGND GND 0 DC 0
+VIN A 0 PULSE(3.3 0 0 100p 100p 10n 20n)
+VIN2 C 0 PULSE(3.3 0 0 100p 100p 20n 40n)
+.TRAN 0 40n
+.include C:\electric\MOS_model.txt
+.END

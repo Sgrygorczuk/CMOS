@@ -1,0 +1,621 @@
+*** SPICE deck for cell C31{sch} from library Project_3
+*** Created on Sun May 05, 2019 22:49:46
+*** Last revised on Sun May 12, 2019 19:38:43
+*** Written on Sun May 12, 2019 19:38:49 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** SUBCIRCUIT Project_3__2_AND FROM CELL 2_AND{sch}
+.SUBCKT Project_3__2_AND In In2 Out
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@2 net@41 In2 net@73 gnd N L=0.7U W=1.75U
+Mnmos@3 net@73 In gnd gnd N L=0.7U W=1.75U
+Mnmos@4 Out net@41 gnd gnd N L=0.7U W=1.75U
+Mpmos@2 net@41 In2 vdd vdd P L=0.7U W=1.75U
+Mpmos@3 net@41 In vdd vdd P L=0.7U W=1.75U
+Mpmos@4 Out net@41 vdd vdd P L=0.7U W=1.75U
+.ENDS Project_3__2_AND
+
+*** SUBCIRCUIT Project_3__3_AND FROM CELL 3_AND{sch}
+.SUBCKT Project_3__3_AND In In2 In3 Out
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 net@13 In2 net@34 gnd N L=0.7U W=1.75U
+Mnmos@1 net@35 In gnd gnd N L=0.7U W=1.75U
+Mnmos@2 Out net@13 gnd gnd N L=0.7U W=1.75U
+Mnmos@3 net@34 In3 net@35 gnd N L=0.7U W=1.75U
+Mpmos@0 net@13 In2 vdd vdd P L=0.7U W=1.75U
+Mpmos@1 net@13 In vdd vdd P L=0.7U W=1.75U
+Mpmos@2 Out net@13 vdd vdd P L=0.7U W=1.75U
+Mpmos@3 net@13 In3 vdd vdd P L=0.7U W=1.75U
+.ENDS Project_3__3_AND
+
+*** SUBCIRCUIT Project_3__4_AND FROM CELL 4_AND{sch}
+.SUBCKT Project_3__4_AND In In2 In3 In4 Out
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 net@6 In2 net@7 gnd N L=0.7U W=1.75U
+Mnmos@1 net@38 In gnd gnd N L=0.7U W=1.75U
+Mnmos@2 Out net@6 gnd gnd N L=0.7U W=1.75U
+Mnmos@3 net@7 In3 net@37 gnd N L=0.7U W=1.75U
+Mnmos@4 net@37 In4 net@38 gnd N L=0.7U W=1.75U
+Mpmos@0 net@6 In2 vdd vdd P L=0.7U W=1.75U
+Mpmos@1 net@6 In vdd vdd P L=0.7U W=1.75U
+Mpmos@2 Out net@6 vdd vdd P L=0.7U W=1.75U
+Mpmos@3 net@6 In3 vdd vdd P L=0.7U W=1.75U
+Mpmos@4 net@6 In4 vdd vdd P L=0.7U W=1.75U
+.ENDS Project_3__4_AND
+
+*** SUBCIRCUIT Project_3__5_AND FROM CELL 5_AND{sch}
+.SUBCKT Project_3__5_AND In In2 In3 In4 In5 Out
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 net@2 In2 net@43 gnd N L=0.7U W=1.75U
+Mnmos@1 net@56 In gnd gnd N L=0.7U W=1.75U
+Mnmos@2 Out net@2 gnd gnd N L=0.7U W=1.75U
+Mnmos@3 net@43 In3 net@58 gnd N L=0.7U W=1.75U
+Mnmos@4 net@58 In4 net@57 gnd N L=0.7U W=1.75U
+Mnmos@5 net@57 In5 net@56 gnd N L=0.7U W=1.75U
+Mpmos@0 net@2 In2 vdd vdd P L=0.7U W=1.75U
+Mpmos@1 net@2 In vdd vdd P L=0.7U W=1.75U
+Mpmos@2 Out net@2 vdd vdd P L=0.7U W=1.75U
+Mpmos@3 net@2 In3 vdd vdd P L=0.7U W=1.75U
+Mpmos@4 net@2 In4 vdd vdd P L=0.7U W=1.75U
+Mpmos@5 net@2 In5 vdd vdd P L=0.7U W=1.75U
+.ENDS Project_3__5_AND
+
+*** SUBCIRCUIT Project_3__6_And FROM CELL 6_And{sch}
+.SUBCKT Project_3__6_And In1 In2 In3 In4 In5 In6 Out
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 net@5 In2 net@17 gnd N L=0.7U W=1.75U
+Mnmos@1 net@53 In1 gnd gnd N L=0.7U W=1.75U
+Mnmos@2 Out net@5 gnd gnd N L=0.7U W=1.75U
+Mnmos@3 net@17 In3 net@27 gnd N L=0.7U W=1.75U
+Mnmos@4 net@27 In4 net@26 gnd N L=0.7U W=1.75U
+Mnmos@5 net@26 In5 net@60 gnd N L=0.7U W=1.75U
+Mnmos@6 net@60 In6 net@53 gnd N L=0.7U W=1.75U
+Mpmos@0 net@5 In2 vdd vdd P L=0.7U W=1.75U
+Mpmos@1 net@5 In1 vdd vdd P L=0.7U W=1.75U
+Mpmos@2 Out net@5 vdd vdd P L=0.7U W=1.75U
+Mpmos@3 net@5 In3 vdd vdd P L=0.7U W=1.75U
+Mpmos@4 net@5 In4 vdd vdd P L=0.7U W=1.75U
+Mpmos@5 net@5 In5 vdd vdd P L=0.7U W=1.75U
+Mpmos@6 net@5 In6 vdd vdd P L=0.7U W=1.75U
+.ENDS Project_3__6_And
+
+*** SUBCIRCUIT Project_3__7_And FROM CELL 7_And{sch}
+.SUBCKT Project_3__7_And _1 _2 _3 _4 _5 _6 _7 O
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 net@2 _2 net@9 gnd N L=0.7U W=1.75U
+Mnmos@1 net@58 _1 gnd gnd N L=0.7U W=1.75U
+Mnmos@2 O net@2 gnd gnd N L=0.7U W=1.75U
+Mnmos@3 net@9 _3 net@17 gnd N L=0.7U W=1.75U
+Mnmos@4 net@17 _4 net@16 gnd N L=0.7U W=1.75U
+Mnmos@5 net@16 _5 net@65 gnd N L=0.7U W=1.75U
+Mnmos@6 net@65 _6 net@57 gnd N L=0.7U W=1.75U
+Mnmos@7 net@57 _7 net@58 gnd N L=0.7U W=1.75U
+Mpmos@0 net@2 _2 vdd vdd P L=0.7U W=1.75U
+Mpmos@1 net@2 _1 vdd vdd P L=0.7U W=1.75U
+Mpmos@2 O net@2 vdd vdd P L=0.7U W=1.75U
+Mpmos@3 net@2 _3 vdd vdd P L=0.7U W=1.75U
+Mpmos@4 net@2 _4 vdd vdd P L=0.7U W=1.75U
+Mpmos@5 net@2 _5 vdd vdd P L=0.7U W=1.75U
+Mpmos@6 net@2 _6 vdd vdd P L=0.7U W=1.75U
+Mpmos@7 net@2 _7 vdd vdd P L=0.7U W=1.75U
+.ENDS Project_3__7_And
+
+*** SUBCIRCUIT Project_3__8_And FROM CELL 8_And{sch}
+.SUBCKT Project_3__8_And _1 _2 _3 _4 _5 _6 _7 _8 O
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 net@6 _2 net@57 gnd N L=0.7U W=1.75U
+Mnmos@1 net@59 _1 gnd gnd N L=0.7U W=1.75U
+Mnmos@2 O net@6 gnd gnd N L=0.7U W=1.75U
+Mnmos@3 net@57 _3 net@9 gnd N L=0.7U W=1.75U
+Mnmos@4 net@9 _4 net@8 gnd N L=0.7U W=1.75U
+Mnmos@5 net@8 _5 net@71 gnd N L=0.7U W=1.75U
+Mnmos@6 net@71 _6 net@49 gnd N L=0.7U W=1.75U
+Mnmos@7 net@49 _7 net@58 gnd N L=0.7U W=1.75U
+Mnmos@8 net@58 _8 net@59 gnd N L=0.7U W=1.75U
+Mpmos@0 net@6 _2 vdd vdd P L=0.7U W=1.75U
+Mpmos@1 net@6 _1 vdd vdd P L=0.7U W=1.75U
+Mpmos@2 O net@6 vdd vdd P L=0.7U W=1.75U
+Mpmos@3 net@6 _3 vdd vdd P L=0.7U W=1.75U
+Mpmos@4 net@6 _4 vdd vdd P L=0.7U W=1.75U
+Mpmos@5 net@6 _5 vdd vdd P L=0.7U W=1.75U
+Mpmos@6 net@6 _6 vdd vdd P L=0.7U W=1.75U
+Mpmos@7 net@6 _7 vdd vdd P L=0.7U W=1.75U
+Mpmos@8 net@6 _8 vdd vdd P L=0.7U W=1.75U
+.ENDS Project_3__8_And
+
+*** SUBCIRCUIT Project_3__9_And FROM CELL 9_And{sch}
+.SUBCKT Project_3__9_And _1 _2 _3 _4 _5 _6 _7 _8 _9 O
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 net@8 _2 net@46 gnd N L=0.7U W=1.75U
+Mnmos@1 net@65 _1 gnd gnd N L=0.7U W=1.75U
+Mnmos@2 O net@8 gnd gnd N L=0.7U W=1.75U
+Mnmos@3 net@46 _3 net@60 gnd N L=0.7U W=1.75U
+Mnmos@4 net@60 _4 net@59 gnd N L=0.7U W=1.75U
+Mnmos@5 net@59 _5 net@74 gnd N L=0.7U W=1.75U
+Mnmos@6 net@74 _6 net@37 gnd N L=0.7U W=1.75U
+Mnmos@7 net@37 _7 net@47 gnd N L=0.7U W=1.75U
+Mnmos@8 net@47 _8 net@64 gnd N L=0.7U W=1.75U
+Mnmos@9 net@64 _9 net@65 gnd N L=0.7U W=1.75U
+Mpmos@0 net@8 _2 vdd vdd P L=0.7U W=1.75U
+Mpmos@1 net@8 _1 vdd vdd P L=0.7U W=1.75U
+Mpmos@2 O net@8 vdd vdd P L=0.7U W=1.75U
+Mpmos@3 net@8 _3 vdd vdd P L=0.7U W=1.75U
+Mpmos@4 net@8 _4 vdd vdd P L=0.7U W=1.75U
+Mpmos@5 net@8 _5 vdd vdd P L=0.7U W=1.75U
+Mpmos@6 net@8 _6 vdd vdd P L=0.7U W=1.75U
+Mpmos@7 net@8 _7 vdd vdd P L=0.7U W=1.75U
+Mpmos@8 net@8 _8 vdd vdd P L=0.7U W=1.75U
+Mpmos@9 net@8 _9 vdd vdd P L=0.7U W=1.75U
+.ENDS Project_3__9_And
+
+*** SUBCIRCUIT Project_3__10_And FROM CELL 10_And{sch}
+.SUBCKT Project_3__10_And _1 _10 _2 _3 _4 _5 _6 _7 _8 _9 O
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 net@3 _2 net@41 gnd N L=0.7U W=1.75U
+Mnmos@1 net@78 _1 gnd gnd N L=0.7U W=1.75U
+Mnmos@2 O net@3 gnd gnd N L=0.7U W=1.75U
+Mnmos@3 net@41 _3 net@54 gnd N L=0.7U W=1.75U
+Mnmos@4 net@54 _4 net@52 gnd N L=0.7U W=1.75U
+Mnmos@5 net@52 _5 net@85 gnd N L=0.7U W=1.75U
+Mnmos@6 net@85 _6 net@31 gnd N L=0.7U W=1.75U
+Mnmos@7 net@31 _7 net@42 gnd N L=0.7U W=1.75U
+Mnmos@8 net@42 _8 net@58 gnd N L=0.7U W=1.75U
+Mnmos@9 net@58 _9 net@77 gnd N L=0.7U W=1.75U
+Mnmos@10 net@77 _10 net@78 gnd N L=0.7U W=1.75U
+Mpmos@0 net@3 _2 vdd vdd P L=0.7U W=1.75U
+Mpmos@1 net@3 _1 vdd vdd P L=0.7U W=1.75U
+Mpmos@2 O net@3 vdd vdd P L=0.7U W=1.75U
+Mpmos@3 net@3 _3 vdd vdd P L=0.7U W=1.75U
+Mpmos@4 net@3 _4 vdd vdd P L=0.7U W=1.75U
+Mpmos@5 net@3 _5 vdd vdd P L=0.7U W=1.75U
+Mpmos@6 net@3 _6 vdd vdd P L=0.7U W=1.75U
+Mpmos@7 net@3 _7 vdd vdd P L=0.7U W=1.75U
+Mpmos@8 net@3 _8 vdd vdd P L=0.7U W=1.75U
+Mpmos@9 net@3 _9 vdd vdd P L=0.7U W=1.75U
+Mpmos@10 net@3 _10 vdd vdd P L=0.7U W=1.75U
+.ENDS Project_3__10_And
+
+*** SUBCIRCUIT Project_3__11_And FROM CELL 11_And{sch}
+.SUBCKT Project_3__11_And _1 _10 _11 _2 _3 _4 _5 _6 _7 _8 _9 O
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 net@18 _2 net@36 gnd N L=0.7U W=1.75U
+Mnmos@1 net@93 _1 gnd gnd N L=0.7U W=1.75U
+Mnmos@2 O net@18 gnd gnd N L=0.7U W=1.75U
+Mnmos@3 net@36 _3 net@50 gnd N L=0.7U W=1.75U
+Mnmos@4 net@50 _4 net@48 gnd N L=0.7U W=1.75U
+Mnmos@5 net@48 _5 net@110 gnd N L=0.7U W=1.75U
+Mnmos@6 net@110 _6 net@25 gnd N L=0.7U W=1.75U
+Mnmos@7 net@25 _7 net@37 gnd N L=0.7U W=1.75U
+Mnmos@8 net@37 _8 net@54 gnd N L=0.7U W=1.75U
+Mnmos@9 net@54 _9 net@69 gnd N L=0.7U W=1.75U
+Mnmos@10 net@69 _10 net@106 gnd N L=0.7U W=1.75U
+Mnmos@11 net@106 _11 net@93 gnd N L=0.7U W=1.75U
+Mpmos@0 net@18 _2 vdd vdd P L=0.7U W=1.75U
+Mpmos@1 net@18 _1 vdd vdd P L=0.7U W=1.75U
+Mpmos@2 O net@18 vdd vdd P L=0.7U W=1.75U
+Mpmos@3 net@18 _3 vdd vdd P L=0.7U W=1.75U
+Mpmos@4 net@18 _4 vdd vdd P L=0.7U W=1.75U
+Mpmos@5 net@18 _5 vdd vdd P L=0.7U W=1.75U
+Mpmos@6 net@18 _6 vdd vdd P L=0.7U W=1.75U
+Mpmos@7 net@18 _7 vdd vdd P L=0.7U W=1.75U
+Mpmos@8 net@18 _8 vdd vdd P L=0.7U W=1.75U
+Mpmos@9 net@18 _9 vdd vdd P L=0.7U W=1.75U
+Mpmos@10 net@18 _10 vdd vdd P L=0.7U W=1.75U
+Mpmos@11 net@18 _11 vdd vdd P L=0.7U W=1.75U
+.ENDS Project_3__11_And
+
+*** SUBCIRCUIT Project_3__12_And FROM CELL 12_And{sch}
+.SUBCKT Project_3__12_And _1 _10 _11 _12 _2 _3 _4 _5 _6 _7 _8 _9 O
+** GLOBAL gnd
+** GLOBAL vdd
+X_2_AND@0 net@0 net@2 O Project_3__2_AND
+X_6_And@0 _1 _2 _3 _4 _5 _6 net@0 Project_3__6_And
+X_6_And@1 _7 _8 _9 _10 _11 _12 net@2 Project_3__6_And
+.ENDS Project_3__12_And
+
+*** SUBCIRCUIT Project_3__13_And FROM CELL 13_And{sch}
+.SUBCKT Project_3__13_And _1 _10 _11 _12 _13 _2 _3 _4 _5 _6 _7 _8 _9 O
+** GLOBAL gnd
+** GLOBAL vdd
+X_2_AND@0 net@0 net@6 O Project_3__2_AND
+X_6_And@0 _1 _2 _3 _4 _5 _6 net@0 Project_3__6_And
+X_7_And@0 _7 _8 _9 _10 _11 _12 _13 net@6 Project_3__7_And
+.ENDS Project_3__13_And
+
+*** SUBCIRCUIT Project_3__14_And FROM CELL 14_And{sch}
+.SUBCKT Project_3__14_And _1 _10 _11 _12 _13 _14 _2 _3 _4 _5 _6 _7 _8 _9 O
+** GLOBAL gnd
+** GLOBAL vdd
+X_2_AND@0 net@0 net@26 O Project_3__2_AND
+X_6_And@0 _1 _2 _3 _4 _5 _6 net@0 Project_3__6_And
+X_8_And@0 _7 _8 _9 _10 _11 _12 _13 _14 net@26 Project_3__8_And
+.ENDS Project_3__14_And
+
+*** SUBCIRCUIT Project_3__15_And FROM CELL 15_And{sch}
+.SUBCKT Project_3__15_And _1 _10 _11 _12 _13 _14 _15 _2 _3 _4 _5 _6 _7 _8 _9 O
+** GLOBAL gnd
+** GLOBAL vdd
+X_2_AND@0 net@21 net@27 O Project_3__2_AND
+X_6_And@0 _1 _2 _3 _4 _5 _6 net@21 Project_3__6_And
+X_9_And@0 _7 _8 _9 _10 _11 _12 _13 _14 _15 net@27 Project_3__9_And
+.ENDS Project_3__15_And
+
+*** SUBCIRCUIT Project_3__16_And FROM CELL 16_And{sch}
+.SUBCKT Project_3__16_And _1 _10 _11 _12 _13 _14 _15 _16 _2 _3 _4 _5 _6 _7 _8 _9 O
+** GLOBAL gnd
+** GLOBAL vdd
+X_2_AND@0 net@0 net@17 O Project_3__2_AND
+X_6_And@0 _1 _2 _3 _4 _5 _6 net@0 Project_3__6_And
+X_10_And@0 _7 _8 _9 _10 _11 _12 _13 _14 _15 _16 net@17 Project_3__10_And
+.ENDS Project_3__16_And
+
+*** SUBCIRCUIT Project_3__17_And FROM CELL 17_And{sch}
+.SUBCKT Project_3__17_And _1 _10 _11 _12 _13 _14 _15 _16 _17 _2 _3 _4 _5 _6 _7 _8 _9 O
+** GLOBAL gnd
+** GLOBAL vdd
+X_2_AND@0 net@0 net@3 O Project_3__2_AND
+X_6_And@0 _1 _2 _3 _4 _5 _6 net@0 Project_3__6_And
+X_11_And@0 _7 _8 _9 _10 _11 _12 _13 _14 _15 _16 _17 net@3 Project_3__11_And
+.ENDS Project_3__17_And
+
+*** SUBCIRCUIT Project_3__18_And FROM CELL 18_And{sch}
+.SUBCKT Project_3__18_And _1 _10 _11 _12 _13 _14 _15 _16 _17 _18 _2 _3 _4 _5 _6 _7 _8 _9 O
+** GLOBAL gnd
+** GLOBAL vdd
+X_2_AND@0 net@0 net@4 O Project_3__2_AND
+X_6_And@0 _1 _2 _3 _4 _5 _6 net@0 Project_3__6_And
+X_12_And@0 _7 _8 _9 _10 _11 _12 _13 _14 _15 _16 _17 _18 net@4 Project_3__12_And
+.ENDS Project_3__18_And
+
+*** SUBCIRCUIT Project_3__19_And FROM CELL 19_And{sch}
+.SUBCKT Project_3__19_And _1 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _2 _3 _4 _5 _6 _7 _8 _9 O
+** GLOBAL gnd
+** GLOBAL vdd
+X_2_AND@0 net@0 net@7 O Project_3__2_AND
+X_6_And@0 _1 _2 _3 _4 _5 _6 net@0 Project_3__6_And
+X_13_And@0 _7 _8 _9 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 net@7 Project_3__13_And
+.ENDS Project_3__19_And
+
+*** SUBCIRCUIT Project_3__20_And FROM CELL 20_And{sch}
+.SUBCKT Project_3__20_And _1 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _2 _20 _3 _4 _5 _6 _7 _8 _9 O
+** GLOBAL gnd
+** GLOBAL vdd
+X_2_AND@0 net@0 net@23 O Project_3__2_AND
+X_6_And@0 _1 _2 _3 _4 _5 _6 net@0 Project_3__6_And
+X_14_And@0 _7 _8 _9 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _20 net@23 Project_3__14_And
+.ENDS Project_3__20_And
+
+*** SUBCIRCUIT Project_3__2_Or FROM CELL 2_Or{sch}
+.SUBCKT Project_3__2_Or In In2 Out
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 net@81 In gnd gnd N L=0.7U W=1.75U
+Mnmos@1 net@81 In2 gnd gnd N L=0.7U W=1.75U
+Mnmos@2 Out net@81 gnd gnd N L=0.7U W=1.75U
+Mpmos@0 net@94 In vdd vdd P L=0.7U W=1.75U
+Mpmos@1 net@81 In2 net@94 vdd P L=0.7U W=1.75U
+Mpmos@2 Out net@81 vdd vdd P L=0.7U W=1.75U
+.ENDS Project_3__2_Or
+
+*** SUBCIRCUIT Project_3__4_OR FROM CELL 4_OR{sch}
+.SUBCKT Project_3__4_OR _1 _2 _3 _4 O
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 net@2 _4 gnd gnd N L=0.7U W=1.75U
+Mnmos@1 net@2 _1 gnd gnd N L=0.7U W=1.75U
+Mnmos@2 O net@2 gnd gnd N L=0.7U W=1.75U
+Mnmos@3 net@2 _3 gnd gnd N L=0.7U W=1.75U
+Mnmos@4 net@2 _2 gnd gnd N L=0.7U W=1.75U
+Mpmos@0 net@7 _4 net@21 vdd P L=0.7U W=1.75U
+Mpmos@1 net@2 _1 net@7 vdd P L=0.7U W=1.75U
+Mpmos@2 O net@2 vdd vdd P L=0.7U W=1.75U
+Mpmos@3 net@21 _3 net@46 vdd P L=0.7U W=1.75U
+Mpmos@4 net@46 _2 vdd vdd P L=0.7U W=1.75U
+.ENDS Project_3__4_OR
+
+*** SUBCIRCUIT Project_3__11_Or FROM CELL 11_Or{sch}
+.SUBCKT Project_3__11_Or _1 _10 _11 _2 _3 _4 _5 _6 _7 _8 _9 O
+** GLOBAL gnd
+** GLOBAL vdd
+X_2_Or@0 net@0 net@33 O Project_3__2_Or
+X_4_OR@0 _1 _2 _3 _4 net@0 Project_3__4_OR
+X_7_And@0 _5 _6 _7 _8 _9 _10 _11 net@33 Project_3__7_And
+.ENDS Project_3__11_Or
+
+*** SUBCIRCUIT Project_3__15_OR FROM CELL 15_OR{sch}
+.SUBCKT Project_3__15_OR _1 _10 _11 _12 _13 _14 _15 _2 _3 _4 _5 _6 _7 _8 _9 O
+** GLOBAL gnd
+** GLOBAL vdd
+X_2_Or@0 net@14 net@2 O Project_3__2_Or
+X_4_OR@0 _1 _2 _3 _4 net@14 Project_3__4_OR
+X_11_Or@0 _5 _6 _7 _8 _9 _10 _11 _12 _13 _14 _15 net@2 Project_3__11_Or
+.ENDS Project_3__15_OR
+
+*** SUBCIRCUIT Project_3__21_And FROM CELL 21_And{sch}
+.SUBCKT Project_3__21_And _1 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _2 _20 _21 _3 _4 _5 _6 _7 _8 _9 O
+** GLOBAL gnd
+** GLOBAL vdd
+X_2_AND@0 net@3 net@7 O Project_3__2_AND
+X_6_And@0 _1 _2 _3 _4 _5 _6 net@3 Project_3__6_And
+X_15_OR@0 _7 _8 _9 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _20 _21 net@7 Project_3__15_OR
+.ENDS Project_3__21_And
+
+*** SUBCIRCUIT Project_3__22_And FROM CELL 22_And{sch}
+.SUBCKT Project_3__22_And _1 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _2 _20 _21 _22 _3 _4 _5 _6 _7 _8 _9 O
+** GLOBAL gnd
+** GLOBAL vdd
+X_2_AND@0 net@14 net@18 O Project_3__2_AND
+X_6_And@0 _1 _2 _3 _4 _5 _6 net@14 Project_3__6_And
+X_16_And@0 _7 _8 _9 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _20 _21 _22 net@18 Project_3__16_And
+.ENDS Project_3__22_And
+
+*** SUBCIRCUIT Project_3__23_And FROM CELL 23_And{sch}
+.SUBCKT Project_3__23_And _1 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _2 _20 _21 _22 _23 _3 _4 _5 _6 _7 _8 _9 O
+** GLOBAL gnd
+** GLOBAL vdd
+X_2_AND@0 net@3 net@7 O Project_3__2_AND
+X_6_And@0 _1 _2 _3 _4 _5 _6 net@3 Project_3__6_And
+X_17_And@0 _7 _8 _9 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _20 _21 _22 _23 net@7 Project_3__17_And
+.ENDS Project_3__23_And
+
+*** SUBCIRCUIT Project_3__24_And FROM CELL 24_And{sch}
+.SUBCKT Project_3__24_And _1 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _2 _20 _21 _22 _23 _24 _3 _4 _5 _6 _7 _8 _9 O
+** GLOBAL gnd
+** GLOBAL vdd
+X_2_AND@0 net@15 net@22 O Project_3__2_AND
+X_6_And@0 _1 _2 _3 _4 _5 _6 net@15 Project_3__6_And
+X_18_And@0 _7 _8 _9 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _20 _21 _22 _23 _24 net@22 Project_3__18_And
+.ENDS Project_3__24_And
+
+*** SUBCIRCUIT Project_3__25_And FROM CELL 25_And{sch}
+.SUBCKT Project_3__25_And _1 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _2 _20 _21 _22 _23 _24 _25 _3 _4 _5 _6 _7 _8 _9 O
+** GLOBAL gnd
+** GLOBAL vdd
+X_2_AND@0 net@1 net@2 O Project_3__2_AND
+X_6_And@0 _1 _2 _3 _4 _5 _6 net@1 Project_3__6_And
+X_19_And@0 _7 _8 _9 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _20 _21 _22 _23 _24 _25 net@2 Project_3__19_And
+.ENDS Project_3__25_And
+
+*** SUBCIRCUIT Project_3__26_And FROM CELL 26_And{sch}
+.SUBCKT Project_3__26_And _1 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _2 _20 _21 _22 _23 _24 _25 _26 _3 _4 _5 _6 _7 _8 _9 O
+** GLOBAL gnd
+** GLOBAL vdd
+X_2_AND@0 net@0 net@10 O Project_3__2_AND
+X_6_And@0 _1 _2 _3 _4 _5 _6 net@0 Project_3__6_And
+X_20_And@0 _7 _8 _9 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _20 _21 _22 _23 _24 _25 _26 net@10 Project_3__20_And
+.ENDS Project_3__26_And
+
+*** SUBCIRCUIT Project_3__27_And FROM CELL 27_And{sch}
+.SUBCKT Project_3__27_And _1 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _2 _20 _21 _22 _23 _24 _25 _26 _27 _3 _4 _5 _6 _7 _8 _9 O
+** GLOBAL gnd
+** GLOBAL vdd
+X_2_AND@0 net@0 net@1 O Project_3__2_AND
+X_6_And@0 _1 _2 _3 _4 _5 _6 net@0 Project_3__6_And
+X_21_And@0 _7 _8 _9 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _20 _21 _22 _23 _24 _25 _26 _27 net@1 Project_3__21_And
+.ENDS Project_3__27_And
+
+*** SUBCIRCUIT Project_3__28_And FROM CELL 28_And{sch}
+.SUBCKT Project_3__28_And _1 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _2 _20 _21 _22 _23 _24 _25 _26 _27 _28 _3 _4 _5 _6 _7 _8 _9 O
+** GLOBAL gnd
+** GLOBAL vdd
+X_2_AND@0 net@0 net@1 O Project_3__2_AND
+X_6_And@0 _1 _2 _3 _4 _5 _6 net@0 Project_3__6_And
+X_22_And@0 _7 _8 _9 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _20 _21 _22 _23 _24 _25 _26 _27 _28 net@1 Project_3__22_And
+.ENDS Project_3__28_And
+
+*** SUBCIRCUIT Project_3__29_And FROM CELL 29_And{sch}
+.SUBCKT Project_3__29_And _1 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _2 _20 _21 _22 _23 _24 _25 _26 _27 _28 _29 _3 _4 _5 _6 _7 _8 _9 O
+** GLOBAL gnd
+** GLOBAL vdd
+X_2_AND@0 net@0 net@1 O Project_3__2_AND
+X_6_And@0 _1 _2 _3 _4 _5 _6 net@0 Project_3__6_And
+X_23_And@0 _7 _8 _9 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _20 _21 _22 _23 _24 _25 _26 _27 _28 _29 net@1 Project_3__23_And
+.ENDS Project_3__29_And
+
+*** SUBCIRCUIT Project_3__30_And FROM CELL 30_And{sch}
+.SUBCKT Project_3__30_And _1 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _2 _20 _21 _22 _23 _24 _25 _26 _27 _28 _29 _3 _30 _4 _5 _6 _7 _8 _9 O
+** GLOBAL gnd
+** GLOBAL vdd
+X_2_AND@0 net@0 net@1 O Project_3__2_AND
+X_6_And@0 _1 _2 _3 _4 _5 _6 net@0 Project_3__6_And
+X_24_And@0 _7 _8 _9 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _20 _21 _22 _23 _24 _25 _26 _27 _28 _29 _30 net@1 Project_3__24_And
+.ENDS Project_3__30_And
+
+*** SUBCIRCUIT Project_3__31_And FROM CELL 31_And{sch}
+.SUBCKT Project_3__31_And _1 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _2 _20 _21 _22 _23 _24 _25 _26 _27 _28 _29 _3 _30 _31 _4 _5 _6 _7 _8 _9 O
+** GLOBAL gnd
+** GLOBAL vdd
+X_2_AND@0 net@0 net@1 O Project_3__2_AND
+X_6_And@0 _1 _2 _3 _4 _5 _6 net@0 Project_3__6_And
+X_25_And@0 _7 _8 _9 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _20 _21 _22 _23 _24 _25 _26 _27 _28 _29 _30 _31 net@1 Project_3__25_And
+.ENDS Project_3__31_And
+
+*** SUBCIRCUIT Project_3__32_And FROM CELL 32_And{sch}
+.SUBCKT Project_3__32_And _1 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _2 _20 _21 _22 _23 _24 _25 _26 _27 _28 _29 _3 _30 _31 _32 _4 _5 _6 _7 _8 _9 O
+** GLOBAL gnd
+** GLOBAL vdd
+X_2_AND@0 net@0 net@1 O Project_3__2_AND
+X_6_And@0 _1 _2 _3 _4 _5 _6 net@0 Project_3__6_And
+X_26_And@0 _7 _8 _9 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _20 _21 _22 _23 _24 _25 _26 _27 _28 _29 _30 _31 _32 net@1 Project_3__26_And
+.ENDS Project_3__32_And
+
+*** SUBCIRCUIT Project_3__8_Or FROM CELL 8_Or{sch}
+.SUBCKT Project_3__8_Or _1 _2 _3 _4 _5 _6 _7 _8 O
+** GLOBAL gnd
+** GLOBAL vdd
+X_2_Or@0 net@0 net@3 O Project_3__2_Or
+X_4_OR@0 _1 _2 _3 _4 net@0 Project_3__4_OR
+X_4_OR@1 _5 _6 _7 _8 net@3 Project_3__4_OR
+.ENDS Project_3__8_Or
+
+*** SUBCIRCUIT Project_3__12_Or FROM CELL 12_Or{sch}
+.SUBCKT Project_3__12_Or _1 _10 _11 _12 _2 _3 _4 _5 _6 _7 _8 _9 O
+** GLOBAL gnd
+** GLOBAL vdd
+X_2_Or@0 net@17 net@28 O Project_3__2_Or
+X_4_OR@0 _1 _2 _3 _4 net@17 Project_3__4_OR
+X_8_Or@0 _5 _6 _7 _8 _9 _10 _11 _12 net@28 Project_3__8_Or
+.ENDS Project_3__12_Or
+
+*** SUBCIRCUIT Project_3__16_Or FROM CELL 16_Or{sch}
+.SUBCKT Project_3__16_Or _1 _10 _11 _12 _13 _14 _15 _16 _2 _3 _4 _5 _6 _7 _8 _9 O
+** GLOBAL gnd
+** GLOBAL vdd
+X_2_Or@0 net@1 net@12 O Project_3__2_Or
+X_4_OR@0 _1 _2 _3 _4 net@1 Project_3__4_OR
+X_12_Or@0 _5 _6 _7 _8 _9 _10 _11 _12 _13 _14 _15 _16 net@12 Project_3__12_Or
+.ENDS Project_3__16_Or
+
+*** SUBCIRCUIT Project_3__20_Or FROM CELL 20_Or{sch}
+.SUBCKT Project_3__20_Or _1 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _2 _20 _3 _4 _5 _6 _7 _8 _9 O
+** GLOBAL gnd
+** GLOBAL vdd
+X_2_Or@0 net@15 net@12 O Project_3__2_Or
+X_4_OR@0 _1 _2 _3 _4 net@15 Project_3__4_OR
+X_16_Or@0 _5 _6 _7 _8 _9 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _20 net@12 Project_3__16_Or
+.ENDS Project_3__20_Or
+
+*** SUBCIRCUIT Project_3__24_Or FROM CELL 24_Or{sch}
+.SUBCKT Project_3__24_Or _1 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _2 _20 _21 _22 _23 _24 _3 _4 _5 _6 _7 _8 _9 O
+** GLOBAL gnd
+** GLOBAL vdd
+X_2_Or@0 net@7 net@1 O Project_3__2_Or
+X_4_OR@0 _1 _2 _3 _4 net@7 Project_3__4_OR
+X_20_Or@0 _5 _6 _7 _8 _9 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _20 _21 _22 _23 _24 net@1 Project_3__20_Or
+.ENDS Project_3__24_Or
+
+*** SUBCIRCUIT Project_3__28_Or FROM CELL 28_Or{sch}
+.SUBCKT Project_3__28_Or _1 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _2 _20 _21 _22 _23 _24 _25 _26 _27 _28 _3 _4 _5 _6 _7 _8 _9 O
+** GLOBAL gnd
+** GLOBAL vdd
+X_2_Or@0 net@2 net@0 O Project_3__2_Or
+X_4_OR@0 _1 _2 _3 _4 net@2 Project_3__4_OR
+X_24_Or@0 _5 _6 _7 _8 _9 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _20 _21 _22 _23 _24 _25 _26 _27 _28 net@0 Project_3__24_Or
+.ENDS Project_3__28_Or
+
+*** SUBCIRCUIT Project_3__32_Or FROM CELL 32_Or{sch}
+.SUBCKT Project_3__32_Or _1 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _2 _20 _21 _22 _23 _24 _25 _26 _27 _28 _29 _3 _30 _31 _32 _4 _5 _6 _7 _8 _9 O
+** GLOBAL gnd
+** GLOBAL vdd
+X_2_Or@0 net@23 net@0 O Project_3__2_Or
+X_4_OR@0 _1 _2 _3 _4 net@23 Project_3__4_OR
+X_28_Or@0 _5 _6 _7 _8 _9 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _20 _21 _22 _23 _24 _25 _26 _27 _28 _29 _30 _31 _32 net@0 Project_3__28_Or
+.ENDS Project_3__32_Or
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: C31{sch}
+X_2_AND@0 P30 G29 net@409 Project_3__2_AND
+X_3_AND@0 P30 P29 G28 net@353 Project_3__3_AND
+X_4_AND@0 P30 P29 P28 G27 net@315 Project_3__4_AND
+X_5_AND@0 P30 P29 P28 P27 G26 net@308 Project_3__5_AND
+X_6_And@0 P30 P29 P28 P27 P26 G25 net@180 Project_3__6_And
+X_7_And@0 P30 P29 P28 P27 P26 P25 G24 net@159 Project_3__7_And
+X_8_And@0 P30 P29 P28 P27 P26 P25 P24 G23 net@125 Project_3__8_And
+X_9_And@0 P30 P29 P28 P27 P26 P25 P24 P23 G22 net@72 Project_3__9_And
+X_10_And@0 P30 P29 P28 P27 P26 P25 P24 P23 P22 G21 net@1157 Project_3__10_And
+X_11_And@0 P30 P29 P28 P27 P26 P25 P24 P23 P22 P21 G20 net@1151 Project_3__11_And
+X_12_And@0 P30 P29 P28 P27 P26 P25 P24 P23 P22 P21 P20 G19 net@1146 Project_3__12_And
+X_13_And@0 P30 P29 P28 P27 P26 P25 P24 P23 P22 P21 P20 P19 G18 net@1143 Project_3__13_And
+X_14_And@0 P30 P29 P28 P27 P26 P25 P24 P23 P22 P21 P20 P19 P18 G17 net@1389 Project_3__14_And
+X_15_And@0 P30 P29 P28 P27 P26 P25 P24 P23 P22 P21 P20 P19 P18 P17 G16 net@1384 Project_3__15_And
+X_16_And@0 P30 P29 P28 P27 P26 P25 P24 P23 P22 P21 P20 P19 P18 P17 P16 G15 net@1379 Project_3__16_And
+X_17_And@0 P30 P29 P28 P27 P26 P25 P24 P23 P22 P21 P20 P19 P18 P17 P16 P15 G14 net@1374 Project_3__17_And
+X_18_And@0 P30 P29 P28 P27 P26 P25 P24 P23 P22 P21 P20 P19 P18 P17 P16 P15 P14 G13 net@1370 Project_3__18_And
+X_19_And@0 P30 P29 P28 P27 P26 P25 P24 P23 P22 P21 P20 P19 P18 P17 P16 P15 P14 P13 G12 net@151 Project_3__19_And
+X_20_And@0 P30 P29 P28 P27 P26 P25 P24 P23 P22 P21 P20 P19 P18 P17 P16 P15 P14 P13 P12 G11 net@146 Project_3__20_And
+X_21_And@0 P30 P29 P28 P27 P26 P25 P24 P23 P22 P21 P20 P19 P18 P17 P16 P15 P14 P13 P12 P11 G10 net@141 Project_3__21_And
+X_22_And@0 P30 P29 P28 P27 P26 P25 P24 P23 P22 P21 P20 P19 P18 P17 P16 P15 P14 P13 P12 P11 P10 G9 net@136 Project_3__22_And
+X_23_And@0 P30 P29 P28 P27 P26 P25 P24 P23 P22 P21 P20 P19 P18 P17 P16 P15 P14 P13 P12 P11 P10 P9 G8 net@414 Project_3__23_And
+X_24_And@0 P30 P29 P28 P27 P26 P25 P24 P23 P22 P21 P20 P19 P18 P17 P16 P15 P14 P13 P12 P11 P10 P9 P8 G7 net@408 Project_3__24_And
+X_25_And@0 P30 P29 P28 P27 P26 P25 P24 P23 P22 P21 P20 P19 P18 P17 P16 P15 P14 P13 P12 P11 P10 P9 P8 P7 G6 net@403 Project_3__25_And
+X_26_And@0 P30 P29 P28 P27 P26 P25 P24 P23 P22 P21 P20 P19 P18 P17 P16 P15 P14 P13 P12 P11 P10 P9 P8 P7 P6 G5 net@397 Project_3__26_And
+X_27_And@0 P30 P29 P28 P27 P26 P25 P24 P23 P22 P21 P20 P19 P18 P17 P16 P15 P14 P13 P12 P11 P10 P9 P8 P7 P6 P5 G4 net@689 Project_3__27_And
+X_28_And@0 P30 P29 P28 P27 P26 P25 P24 P23 P22 P21 P20 P19 P18 P17 P16 P15 P14 P13 P12 P11 P10 P9 P8 P7 P6 P5 P4 G3 net@683 Project_3__28_And
+X_29_And@0 P30 P29 P28 P27 P26 P25 P24 P23 P22 P21 P20 P19 P18 P17 P16 P15 P14 P13 P12 P11 P10 P9 P8 P7 P6 P5 P4 P3 G2 net@678 Project_3__29_And
+X_30_And@0 P30 P29 P28 P27 P26 P25 P24 P23 P22 P21 P20 P19 P18 P17 P16 P15 P14 P13 P12 P11 P10 P9 P8 P7 P6 P5 P4 P3 P2 G1 net@1478 Project_3__30_And
+X_31_And@0 P30 P29 P28 P27 P26 P25 P24 P23 P22 P21 P20 P19 P18 P17 P16 P15 P14 P13 P12 P11 P10 P9 P8 P7 P6 P5 P4 P3 P2 P1 G0 net@1473 Project_3__31_And
+X_32_And@0 P30 P29 P28 P27 P26 P25 P24 P23 P22 P21 P20 P19 P18 P17 P16 P15 P14 P13 P12 P11 P10 P9 P8 P7 P6 P5 P4 P3 P2 P1 P0 C0 net@1467 Project_3__32_And
+X_32_Or@0 G30 net@1478 net@1473 net@1467 net@689 net@683 net@678 net@414 net@408 net@403 net@397 net@151 net@146 net@141 net@136 net@1389 net@1384 net@1379 net@1374 net@1370 net@1157 net@1151 net@1146 net@1143 net@409 net@353 net@315 net@308 net@180 net@159 net@125 net@72 C31 Project_3__32_Or
+
+* Spice Code nodes in cell cell 'C31{sch}'
+VDD VDD 0 DC 3.3 
+VGND GND 0 DC 0
+VIN2 P0 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN3 P1 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN4 P2 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN5 P3 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN6 P4 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN7 P5 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN8 P6 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN9 P7 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN10 P8 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN11 P9 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN12 P10 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN13 P11 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN14 P12 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN15 P13 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN16 P14 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN17 P15 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN18 P16 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN19 P17 0  PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN20 P18 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN21 P19 0 PULSE(3.3 0 0 1n 1n 160n 320n
+VIN22 P20 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN23 P21 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN24 P22 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN25 P23 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN26 P24 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN27 P25 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN28 P26 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN29 P27 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN30 P28 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN31 P29 0  PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN32 P30 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN33 P31 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN97 G0 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN34 G1 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN35 G2 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN36 G3 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN37 G4 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN38 G5 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN39 G6 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN40 G7 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN41 G8 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN42 G9 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN43 G10 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN44 G11 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN45 G12 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN46 G13 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN47 G14 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN48 G15 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN49 G16 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN50 G17 0  PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN51 G18 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN52 G19 0 PULSE(3.3 0 0 1n 1n 160n 320n
+VIN53 G20 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN54 G21 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN55 G22 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN56 G23 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN57 G24 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN58 G25 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN59 G26 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN60 G27 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN61 G28 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN62 G29 0  PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN63 G30 0 PULSE(0 3.3 0 1n 1n 5n 320n)
+VIN65 C0 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+.TRAN 0 50n
+.include C:\electric\MOS_model.txt
+.END

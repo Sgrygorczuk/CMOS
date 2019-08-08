@@ -1,0 +1,8 @@
+Circuit: *** SPICE deck for cell CLA_Full{sch} from library Project_3
+
+Vgnd: both pins shorted together -- ignoring.
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Fatal Error: C2: Missing node(s).

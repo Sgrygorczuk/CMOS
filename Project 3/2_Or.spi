@@ -1,0 +1,25 @@
+*** SPICE deck for cell 2_Or{sch} from library Project_3
+*** Created on Sat May 04, 2019 13:46:16
+*** Last revised on Sun May 12, 2019 16:45:58
+*** Written on Sun May 12, 2019 16:46:02 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: 2_Or{sch}
+Mnmos@0 net@81 In gnd gnd N L=0.7U W=1.75U
+Mnmos@1 net@81 In2 gnd gnd N L=0.7U W=1.75U
+Mnmos@2 Out net@81 gnd gnd N L=0.7U W=1.75U
+Mpmos@0 net@94 In vdd vdd P L=0.7U W=1.75U
+Mpmos@1 net@81 In2 net@94 vdd P L=0.7U W=1.75U
+Mpmos@2 Out net@81 vdd vdd P L=0.7U W=1.75U
+
+* Spice Code nodes in cell cell '2_Or{sch}'
+VDD VDD 0 DC 3.3 
+VGND GND 0 DC 0
+VIN In 0 PULSE(3.3 0 0 1n 1n 10n 20n)
+VIN1 In2 0 PULSE(3.3 0 0 1n 1n 20n 40n)
+.TRAN 0 40n
+.include C:\electric\MOS_model.txt
+.END
