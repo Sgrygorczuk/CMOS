@@ -1,0 +1,29 @@
+*** SPICE deck for cell 4_AND{lay} from library Project_3
+*** Created on Fri May 10, 2019 11:30:00
+*** Last revised on Sat May 11, 2019 10:45:46
+*** Written on Sat May 11, 2019 10:46:01 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** TOP LEVEL CELL: 4_AND{lay}
+Mnmos@0 gnd I3 net@5 gnd N L=0.7U W=1.75U AS=3.369P AD=32.463P PS=5.6U PD=42.35U
+Mnmos@1 net@5 I2 net@17 gnd N L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mnmos@3 net@17 I1 net@41 gnd N L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mnmos@4 net@41 I0 net@3 gnd N L=0.7U W=1.75U AS=3.675P AD=3.369P PS=6.3U PD=5.6U
+Mnmos@6 O net@3 gnd gnd N L=0.7U W=1.75U AS=32.463P AD=4.9P PS=42.35U PD=9.1U
+Mpmos@0 vdd I3 net@3 vdd P L=0.7U W=1.75U AS=3.675P AD=17.518P PS=6.3U PD=21.14U
+Mpmos@1 net@3 I2 vdd vdd P L=0.7U W=1.75U AS=17.518P AD=3.675P PS=21.14U PD=6.3U
+Mpmos@3 vdd I1 net@3 vdd P L=0.7U W=1.75U AS=3.675P AD=17.518P PS=6.3U PD=21.14U
+Mpmos@4 net@3 I0 vdd vdd P L=0.7U W=1.75U AS=17.518P AD=3.675P PS=21.14U PD=6.3U
+Mpmos@6 O net@3 vdd vdd P L=0.7U W=1.75U AS=17.518P AD=4.9P PS=21.14U PD=9.1U
+
+* Spice Code nodes in cell cell '4_AND{lay}'
+VDD VDD 0 DC 3.3 
+VGND GND 0 DC 0
+VIN2 I0 0 PULSE(3.3 0 0 1n 1n 10n 20n)
+VIN3 I1 0 PULSE(3.3 0 0 1n 1n 20n 40n)
+VIN4 I2 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+VIN5 I3 0 PULSE(3.3 0 0 1n 1n 80n 160n)
+.TRAN 0 160n
+.include C:\electric\MOS_model.txt
+.END

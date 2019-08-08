@@ -1,0 +1,42 @@
+*** SPICE deck for cell 8_And{lay} from library Project_3
+*** Created on Fri May 10, 2019 11:30:26
+*** Last revised on Sat May 11, 2019 11:06:16
+*** Written on Sat May 11, 2019 11:06:21 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+*** WARNING: no ground connection for N-transistor wells in cell '8_And{lay}'
+
+*** TOP LEVEL CELL: 8_And{lay}
+Mnmos@0 gnd I7 net@46 gnd N L=0.7U W=1.75U AS=3.369P AD=47.775P PS=5.6U PD=59.85U
+Mnmos@1 net@46 I6 net@59 gnd N L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mnmos@3 net@59 I5 net@86 gnd N L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mnmos@4 net@86 I4 net@9 gnd N L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mnmos@5 net@9 I3 net@64 gnd N L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mnmos@6 net@64 I2 net@31 gnd N L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mnmos@7 net@31 I1 net@39 gnd N L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mnmos@8 net@39 I0 net@6 gnd N L=0.7U W=1.75U AS=3.539P AD=3.369P PS=5.989U PD=5.6U
+Mnmos@10 O net@6 gnd gnd N L=0.7U W=1.75U AS=47.775P AD=4.9P PS=59.85U PD=9.1U
+Mpmos@0 vdd I7 net@6 vdd P L=0.7U W=1.75U AS=3.539P AD=15.313P PS=5.989U PD=18.122U
+Mpmos@1 net@6 I6 vdd vdd P L=0.7U W=1.75U AS=15.313P AD=3.539P PS=18.122U PD=5.989U
+Mpmos@3 vdd I5 net@6 vdd P L=0.7U W=1.75U AS=3.539P AD=15.313P PS=5.989U PD=18.122U
+Mpmos@4 net@6 I4 vdd vdd P L=0.7U W=1.75U AS=15.313P AD=3.539P PS=18.122U PD=5.989U
+Mpmos@5 vdd I3 net@6 vdd P L=0.7U W=1.75U AS=3.539P AD=15.313P PS=5.989U PD=18.122U
+Mpmos@6 net@6 I2 vdd vdd P L=0.7U W=1.75U AS=15.313P AD=3.539P PS=18.122U PD=5.989U
+Mpmos@7 vdd I1 net@6 vdd P L=0.7U W=1.75U AS=3.539P AD=15.313P PS=5.989U PD=18.122U
+Mpmos@8 net@6 I0 vdd vdd P L=0.7U W=1.75U AS=15.313P AD=3.539P PS=18.122U PD=5.989U
+Mpmos@10 O net@6 vdd vdd P L=0.7U W=1.75U AS=15.313P AD=4.9P PS=18.122U PD=9.1U
+
+* Spice Code nodes in cell cell '8_And{lay}'
+VDD VDD 0 DC 3.3 
+VGND GND 0 DC 0
+VIN2 I0 0 PULSE(3.3 0 0 1n 1n 10n 20n)
+VIN3 I1 0 PULSE(3.3 0 0 1n 1n 20n 40n)
+VIN4 I2 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+VIN5 I3 0 PULSE(3.3 0 0 1n 1n 80n 160n)
+VIN6 I4 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN7 I5 0 PULSE(3.3 0 0 1n 1n 320n 640n)
+VIN8 I6 0 PULSE(3.3 0 0 1n 1n 640n 1280n)
+VIN9 I7 0 PULSE(3.3 0 0 1n 1n 1280n 2560n)
+.TRAN 0 2560n
+.include C:\electric\MOS_model.txt
+.END

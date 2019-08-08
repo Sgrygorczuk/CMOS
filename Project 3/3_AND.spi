@@ -1,0 +1,27 @@
+*** SPICE deck for cell 3_AND{lay} from library Project_3
+*** Created on Fri May 10, 2019 11:29:55
+*** Last revised on Sat May 11, 2019 10:43:01
+*** Written on Sat May 11, 2019 10:43:07 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+*** WARNING: no ground connection for N-transistor wells in cell '3_AND{lay}'
+
+*** TOP LEVEL CELL: 3_AND{lay}
+Mnmos@0 gnd I2 net@36 gnd N L=0.7U W=1.75U AS=3.369P AD=26.338P PS=5.6U PD=35.35U
+Mnmos@1 net@36 I1 net@9 gnd N L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mnmos@2 O net@1 gnd gnd N L=0.7U W=1.75U AS=26.338P AD=4.9P PS=35.35U PD=9.1U
+Mnmos@3 net@9 I0 net@1 gnd N L=0.7U W=1.75U AS=4.134P AD=3.369P PS=7.35U PD=5.6U
+Mpmos@0 vdd I2 net@1 vdd P L=0.7U W=1.75U AS=4.134P AD=16.997P PS=7.35U PD=20.65U
+Mpmos@1 net@1 I1 vdd vdd P L=0.7U W=1.75U AS=16.997P AD=4.134P PS=20.65U PD=7.35U
+Mpmos@2 O net@1 vdd vdd P L=0.7U W=1.75U AS=16.997P AD=4.9P PS=20.65U PD=9.1U
+Mpmos@3 vdd I0 net@1 vdd P L=0.7U W=1.75U AS=4.134P AD=16.997P PS=7.35U PD=20.65U
+
+* Spice Code nodes in cell cell '3_AND{lay}'
+VDD VDD 0 DC 3.3 
+VGND GND 0 DC 0
+VIN2 I0 0 PULSE(3.3 0 0 1n 1n 10n 20n)
+VIN3 I1 0 PULSE(3.3 0 0 1n 1n 20n 40n)
+VIN4 I2 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+.TRAN 0 80n
+.include C:\electric\MOS_model.txt
+.END

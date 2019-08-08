@@ -1,0 +1,65 @@
+*** SPICE deck for cell C2{sch} from library Project_3
+*** Created on Sun May 05, 2019 23:52:04
+*** Last revised on Thu May 09, 2019 15:17:12
+*** Written on Thu May 09, 2019 15:17:40 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** SUBCIRCUIT Project_3__2_AND FROM CELL 2_AND{sch}
+.SUBCKT Project_3__2_AND In In2 Out
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@2 net@41 In2 net@73 gnd N L=0.7U W=1.75U
+Mnmos@3 net@73 In gnd gnd N L=0.7U W=1.75U
+Mnmos@4 Out net@41 gnd gnd N L=0.7U W=1.75U
+Mpmos@2 net@41 In2 vdd vdd P L=0.7U W=1.75U
+Mpmos@3 net@41 In vdd vdd P L=0.7U W=1.75U
+Mpmos@4 Out net@41 vdd vdd P L=0.7U W=1.75U
+.ENDS Project_3__2_AND
+
+*** SUBCIRCUIT Project_3__3_AND FROM CELL 3_AND{sch}
+.SUBCKT Project_3__3_AND In In2 In3 Out
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 net@13 In2 net@34 gnd N L=0.7U W=1.75U
+Mnmos@1 net@35 In gnd gnd N L=0.7U W=1.75U
+Mnmos@2 Out net@13 gnd gnd N L=0.7U W=1.75U
+Mnmos@3 net@34 In3 net@35 gnd N L=0.7U W=1.75U
+Mpmos@0 net@13 In2 vdd vdd P L=0.7U W=1.75U
+Mpmos@1 net@13 In vdd vdd P L=0.7U W=1.75U
+Mpmos@2 Out net@13 vdd vdd P L=0.7U W=1.75U
+Mpmos@3 net@13 In3 vdd vdd P L=0.7U W=1.75U
+.ENDS Project_3__3_AND
+
+*** SUBCIRCUIT Project_3__3_Or FROM CELL 3_Or{sch}
+.SUBCKT Project_3__3_Or _1 _2 _3 O
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 net@18 _3 gnd gnd N L=0.7U W=1.75U
+Mnmos@1 net@18 _1 gnd gnd N L=0.7U W=1.75U
+Mnmos@2 O net@18 gnd gnd N L=0.7U W=1.75U
+Mnmos@3 net@18 _2 gnd gnd N L=0.7U W=1.75U
+Mpmos@0 net@29 _3 net@42 vdd P L=0.7U W=1.75U
+Mpmos@1 net@18 _1 net@29 vdd P L=0.7U W=1.75U
+Mpmos@2 O net@18 vdd vdd P L=0.7U W=1.75U
+Mpmos@3 net@42 _2 vdd vdd P L=0.7U W=1.75U
+.ENDS Project_3__3_Or
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: C2{sch}
+X_2_AND@0 P1 G0 net@401 Project_3__2_AND
+X_3_AND@0 P1 P0 C0 net@805 Project_3__3_AND
+X_3_Or@0 net@401 net@805 G1 C2 Project_3__3_Or
+
+* Spice Code nodes in cell cell 'C2{sch}'
+VDD VDD 0 DC 3.3 
+VGND GND 0 DC 0
+VIN P0 0 PULSE(3.3 0 0 1n 1n 10n 20n)
+VIN1 P1 0 PULSE(3.3 0 0 1n 1n 20n 40n)
+VIN2 C0 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+VIN3 G0 0 PULSE(3.3 0 0 1n 1n 80n 160n)
+VIN5 G1 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+.TRAN 0 320n
+.include C:\electric\MOS_model.txt
+.END

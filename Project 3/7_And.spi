@@ -1,0 +1,38 @@
+*** SPICE deck for cell 7_And{lay} from library Project_3
+*** Created on Fri May 10, 2019 11:30:22
+*** Last revised on Sat May 11, 2019 11:04:01
+*** Written on Sat May 11, 2019 11:04:24 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** TOP LEVEL CELL: 7_And{lay}
+Mnmos@0 gnd I6 net@34 gnd N L=0.7U W=1.75U AS=3.369P AD=44.713P PS=5.6U PD=56.35U
+Mnmos@1 net@34 I5 net@47 gnd N L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mnmos@3 net@47 I4 net@77 gnd N L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mnmos@4 net@77 I3 net@79 gnd N L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mnmos@5 net@79 I2 net@53 gnd N L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mnmos@6 net@53 I1 net@23 gnd N L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mnmos@7 net@23 I0 net@13 gnd N L=0.7U W=1.75U AS=3.752P AD=3.369P PS=6.475U PD=5.6U
+Mnmos@9 O net@13 gnd gnd N L=0.7U W=1.75U AS=44.713P AD=4.9P PS=56.35U PD=9.1U
+Mpmos@0 vdd I6 net@13 vdd P L=0.7U W=1.75U AS=3.752P AD=15.695P PS=6.475U PD=18.375U
+Mpmos@1 net@13 I5 vdd vdd P L=0.7U W=1.75U AS=15.695P AD=3.752P PS=18.375U PD=6.475U
+Mpmos@3 vdd I4 net@13 vdd P L=0.7U W=1.75U AS=3.752P AD=15.695P PS=6.475U PD=18.375U
+Mpmos@4 net@13 I3 vdd vdd P L=0.7U W=1.75U AS=15.695P AD=3.752P PS=18.375U PD=6.475U
+Mpmos@5 vdd I2 net@13 vdd P L=0.7U W=1.75U AS=3.752P AD=15.695P PS=6.475U PD=18.375U
+Mpmos@6 net@13 I1 vdd vdd P L=0.7U W=1.75U AS=15.695P AD=3.752P PS=18.375U PD=6.475U
+Mpmos@7 vdd I0 net@13 vdd P L=0.7U W=1.75U AS=3.752P AD=15.695P PS=6.475U PD=18.375U
+Mpmos@9 O net@13 vdd vdd P L=0.7U W=1.75U AS=15.695P AD=4.9P PS=18.375U PD=9.1U
+
+* Spice Code nodes in cell cell '7_And{lay}'
+VDD VDD 0 DC 3.3 
+VGND GND 0 DC 0
+VIN2 I0 0 PULSE(3.3 0 0 1n 1n 10n 20n)
+VIN3 I1 0 PULSE(3.3 0 0 1n 1n 20n 40n)
+VIN4 I2 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+VIN5 I3 0 PULSE(3.3 0 0 1n 1n 80n 160n)
+VIN6 I4 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN7 I5 0 PULSE(3.3 0 0 1n 1n 320n 640n)
+VIN8 I6 0 PULSE(3.3 0 0 1n 1n 640n 1280n)
+.TRAN 0 1280n
+.include C:\electric\MOS_model.txt
+.END

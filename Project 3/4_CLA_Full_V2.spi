@@ -1,0 +1,84 @@
+*** SPICE deck for cell 4_CLA_Full_V2{sch} from library Project_3
+*** Created on Sat May 04, 2019 17:24:09
+*** Last revised on Sun May 05, 2019 13:04:22
+*** Written on Sun May 05, 2019 13:04:26 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** SUBCIRCUIT Project_3__C1_V2 FROM CELL C1_V2{sch}
+.SUBCKT Project_3__C1_V2 C0 C1 G0 P0
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@3 net@172 P0 net@118 gnd N L=0.7U W=1.75U
+Mnmos@4 net@118 C0 gnd gnd N L=0.7U W=1.75U
+Mnmos@6 net@172 G0 gnd gnd N L=0.7U W=1.75U
+Mnmos@7 C1 net@172 gnd gnd N L=0.7U W=1.75U
+Mpmos@3 net@152 P0 vdd vdd P L=0.7U W=1.75U
+Mpmos@4 net@152 C0 vdd vdd P L=0.7U W=1.75U
+Mpmos@6 net@172 G0 net@152 vdd P L=0.7U W=1.75U
+Mpmos@7 C1 net@172 vdd vdd P L=0.7U W=1.75U
+.ENDS Project_3__C1_V2
+
+*** SUBCIRCUIT Project_3__Full_Adder FROM CELL Full_Adder{sch}
+.SUBCKT Project_3__Full_Adder A C C0 G P S vdd
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 P net@67 net@117 gnd N L=0.7U W=1.75U
+Mnmos@1 P A net@80 gnd N L=0.7U W=1.75U
+Mnmos@2 net@117 net@58 gnd gnd N L=0.7U W=1.75U
+Mnmos@3 net@80 net@26 gnd gnd N L=0.7U W=1.75U
+Mnmos@4 net@67 A gnd gnd N L=0.7U W=1.75U
+Mnmos@5 net@58 net@26 gnd gnd N L=0.7U W=1.75U
+Mnmos@6 S net@71 net@133 gnd N L=0.7U W=1.75U
+Mnmos@7 S P net@79 gnd N L=0.7U W=1.75U
+Mnmos@8 net@133 net@59 gnd gnd N L=0.7U W=1.75U
+Mnmos@9 net@79 C gnd gnd N L=0.7U W=1.75U
+Mnmos@10 net@71 P gnd gnd N L=0.7U W=1.75U
+Mnmos@11 net@59 C gnd gnd N L=0.7U W=1.75U
+Mnmos@14 net@28 A net@27 gnd N L=0.7U W=1.75U
+Mnmos@15 net@27 net@26 gnd gnd N L=0.7U W=1.75U
+Mnmos@16 G net@28 gnd gnd N L=0.7U W=1.75U
+Mnmos@17 net@26 vdd net@316 gnd N L=0.7U W=1.75U
+Mnmos@18 net@26 vdd net@349 gnd N L=0.7U W=1.75U
+Mnmos@19 net@316 net@306 gnd gnd N L=0.7U W=1.75U
+Mnmos@20 net@349 C0 gnd gnd N L=0.7U W=1.75U
+Mnmos@21 vdd vdd gnd gnd N L=0.7U W=1.75U
+Mnmos@22 net@306 C0 gnd gnd N L=0.7U W=1.75U
+Mpmos@0 net@1 net@67 vdd vdd P L=0.7U W=1.75U
+Mpmos@1 net@1 net@58 vdd vdd P L=0.7U W=1.75U
+Mpmos@2 P A net@1 vdd P L=0.7U W=1.75U
+Mpmos@3 P net@26 net@1 vdd P L=0.7U W=1.75U
+Mpmos@4 net@67 A vdd vdd P L=0.7U W=1.75U
+Mpmos@5 net@58 net@26 vdd vdd P L=0.7U W=1.75U
+Mpmos@6 net@46 net@71 vdd vdd P L=0.7U W=1.75U
+Mpmos@7 net@46 net@59 vdd vdd P L=0.7U W=1.75U
+Mpmos@8 S P net@46 vdd P L=0.7U W=1.75U
+Mpmos@9 S C net@46 vdd P L=0.7U W=1.75U
+Mpmos@10 net@71 P vdd vdd P L=0.7U W=1.75U
+Mpmos@11 net@59 C vdd vdd P L=0.7U W=1.75U
+Mpmos@14 net@28 A vdd vdd P L=0.7U W=1.75U
+Mpmos@15 net@28 net@26 vdd vdd P L=0.7U W=1.75U
+Mpmos@16 G net@28 vdd vdd P L=0.7U W=1.75U
+Mpmos@17 net@297 vdd vdd vdd P L=0.7U W=1.75U
+Mpmos@18 net@297 net@306 vdd vdd P L=0.7U W=1.75U
+Mpmos@19 net@26 vdd net@297 vdd P L=0.7U W=1.75U
+Mpmos@20 net@26 C0 net@297 vdd P L=0.7U W=1.75U
+Mpmos@21 vdd vdd vdd vdd P L=0.7U W=1.75U
+Mpmos@22 net@306 C0 vdd vdd P L=0.7U W=1.75U
+.ENDS Project_3__Full_Adder
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: 4_CLA_Full_V2{sch}
+XC1_V2@0 C0 C1 net@48 net@46 Project_3__C1_V2
+XFull_Add@0 A0 C0 C0 net@48 net@46 S0 vdd Project_3__Full_Adder
+
+* Spice Code nodes in cell cell '4_CLA_Full_V2{sch}'
+VDD VDD 0 DC 3.3 
+VGND GND 0 DC 0
+VIN A0 0 PULSE(3.3 0 0 1n 1n 10n 20n)
+VIN1 B0 0 PULSE(3.3 0 0 1n 1n 20n 40n)
+VIN2 C0 0 PULSE(0 3.3 0 1n 1n 80n 160n)
+.TRAN 0 80n
+.include C:\electric\MOS_model.txt
+.END

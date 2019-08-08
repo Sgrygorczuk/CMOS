@@ -1,0 +1,28 @@
+*** SPICE deck for cell C1_V2{sch} from library Project_3
+*** Created on Sat May 04, 2019 16:41:44
+*** Last revised on Sun May 05, 2019 14:56:13
+*** Written on Sun May 05, 2019 14:56:20 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: C1_V2{sch}
+Mnmos@3 net@172 P0 net@118 gnd N L=0.7U W=1.75U
+Mnmos@4 net@118 C0 gnd gnd N L=0.7U W=1.75U
+Mnmos@6 net@172 G0 gnd gnd N L=0.7U W=1.75U
+Mnmos@7 C1 net@172 gnd gnd N L=0.7U W=1.75U
+Mpmos@3 net@152 P0 vdd vdd P L=0.7U W=1.75U
+Mpmos@4 net@152 C0 vdd vdd P L=0.7U W=1.75U
+Mpmos@6 net@172 G0 net@152 vdd P L=0.7U W=1.75U
+Mpmos@7 C1 net@172 vdd vdd P L=0.7U W=1.75U
+
+* Spice Code nodes in cell cell 'C1_V2{sch}'
+VDD VDD 0 DC 3.3 
+VGND GND 0 DC 0
+VIN P0 0 PULSE(3.3 0 0 1n 1n 10n 20n)
+VIN1 G0 0 PULSE(3.3 0 0 1n 1n 20n 40n)
+VIN2 C0 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+.TRAN 0 80n
+.include C:\electric\MOS_model.txt
+.END

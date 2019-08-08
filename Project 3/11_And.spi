@@ -1,0 +1,50 @@
+*** SPICE deck for cell 11_And{lay} from library Project_3
+*** Created on Fri May 10, 2019 11:30:43
+*** Last revised on Sat May 11, 2019 11:15:15
+*** Written on Sat May 11, 2019 11:15:20 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** TOP LEVEL CELL: 11_And{lay}
+Mnmos@0 gnd I10 net@105 gnd N L=0.7U W=1.75U AS=3.369P AD=60.025P PS=5.6U PD=73.85U
+Mnmos@1 net@105 I9 net@63 gnd N L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mnmos@3 net@63 I8 net@89 gnd N L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mnmos@4 net@89 I7 net@100 gnd N L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mnmos@5 net@100 I6 net@68 gnd N L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mnmos@6 net@68 I5 net@93 gnd N L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mnmos@7 net@93 I4 net@94 gnd N L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mnmos@8 net@94 I3 net@111 gnd N L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mnmos@9 net@111 I2 net@104 gnd N L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mnmos@10 net@104 I1 net@35 gnd N L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mnmos@11 net@35 I0 net@3 gnd N L=0.7U W=1.75U AS=3.624P AD=3.369P PS=6.183U PD=5.6U
+Mnmos@12 O net@3 gnd gnd N L=0.7U W=1.75U AS=60.025P AD=4.9P PS=73.85U PD=9.1U
+Mpmos@0 vdd I10 net@3 vdd P L=0.7U W=1.75U AS=3.624P AD=14.649P PS=6.183U PD=17.033U
+Mpmos@1 net@3 I9 vdd vdd P L=0.7U W=1.75U AS=14.649P AD=3.624P PS=17.033U PD=6.183U
+Mpmos@3 vdd I8 net@3 vdd P L=0.7U W=1.75U AS=3.624P AD=14.649P PS=6.183U PD=17.033U
+Mpmos@4 net@3 I7 vdd vdd P L=0.7U W=1.75U AS=14.649P AD=3.624P PS=17.033U PD=6.183U
+Mpmos@5 vdd I6 net@3 vdd P L=0.7U W=1.75U AS=3.624P AD=14.649P PS=6.183U PD=17.033U
+Mpmos@6 net@3 I5 vdd vdd P L=0.7U W=1.75U AS=14.649P AD=3.624P PS=17.033U PD=6.183U
+Mpmos@7 vdd I4 net@3 vdd P L=0.7U W=1.75U AS=3.624P AD=14.649P PS=6.183U PD=17.033U
+Mpmos@8 net@3 I3 vdd vdd P L=0.7U W=1.75U AS=14.649P AD=3.624P PS=17.033U PD=6.183U
+Mpmos@9 vdd I2 net@3 vdd P L=0.7U W=1.75U AS=3.624P AD=14.649P PS=6.183U PD=17.033U
+Mpmos@10 net@3 I1 vdd vdd P L=0.7U W=1.75U AS=14.649P AD=3.624P PS=17.033U PD=6.183U
+Mpmos@11 vdd I0 net@3 vdd P L=0.7U W=1.75U AS=3.624P AD=14.649P PS=6.183U PD=17.033U
+Mpmos@12 O net@3 vdd vdd P L=0.7U W=1.75U AS=14.649P AD=4.9P PS=17.033U PD=9.1U
+
+* Spice Code nodes in cell cell '11_And{lay}'
+VDD VDD 0 DC 3.3 
+VGND GND 0 DC 0
+VIN2 I0 0 PULSE(3.3 0 0 1n 1n 10n 20n)
+VIN3 I1 0 PULSE(3.3 0 0 1n 1n 20n 40n)
+VIN4 I2 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+VIN5 I3 0 PULSE(3.3 0 0 1n 1n 80n 160n)
+VIN6 I4 0 PULSE(3.3 0 0 1n 1n 160n 320n)
+VIN7 I5 0 PULSE(3.3 0 0 1n 1n 320n 640n)
+VIN8 I6 0 PULSE(3.3 0 0 1n 1n 640n 1280n)
+VIN9 I7 0 PULSE(3.3 0 0 1n 1n 1280n 2560n)
+VIN10 I8 0 PULSE(3.3 0 0 1n 1n 2560n 5120n)
+VIN11 I9 0 PULSE(3.3 0 0 1n 1n 5120n 10240n)
+VIN12 I10 0 PULSE(3.3 0 0 1n 1n 10240n 20480n)
+.TRAN 0 20480n
+.include C:\electric\MOS_model.txt
+.END

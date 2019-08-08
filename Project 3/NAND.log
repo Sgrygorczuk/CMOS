@@ -1,0 +1,27 @@
+Circuit: *** SPICE deck for cell NAND{lay} from library NAND
+
+Vgnd: both pins shorted together -- ignoring.
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Direct Newton iteration for .op point succeeded.
+
+Date: Fri May 10 12:43:20 2019
+Total elapsed time: 0.106 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2303
+traniter = 2296
+tranpoints = 1093
+accept = 1079
+rejected = 14
+matrix size = 8
+fillins = 0
+solver = Normal
+Matrix Compiler1: 336 bytes object code size  0.1/0.1/[0.1]
+Matrix Compiler2: 624 bytes object code size  0.1/0.1/[0.1]
+
+
