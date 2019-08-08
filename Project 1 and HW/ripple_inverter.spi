@@ -1,0 +1,20 @@
+*** SPICE deck for cell ripple_inverter{lay} from library HW-3
+*** Created on Sun Mar 24, 2019 23:06:14
+*** Last revised on Sun Mar 24, 2019 23:49:49
+*** Written on Sun Mar 24, 2019 23:53:19 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** TOP LEVEL CELL: HW-3:ripple_inverter{lay}
+Mnmos@2 net@10 In gnd nmos@2_n-trans-well N L=0.7U W=1.75U AS=8.881P AD=5.972P PS=13.65U PD=9.8U
+Mnmos@3 gnd net@10 Out nmos@3_n-trans-well N L=0.7U W=1.75U AS=5.972P AD=8.881P PS=9.8U PD=13.65U
+Mpmos@3 net@10 In vdd pmos@3_p-trans-well P L=0.7U W=3.5U AS=11.638P AD=5.972P PS=15.4U PD=9.8U
+Mpmos@5 vdd net@10 Out pmos@5_p-trans-well P L=0.7U W=3.5U AS=5.972P AD=11.638P PS=9.8U PD=15.4U
+
+* Spice Code nodes in cell cell 'HW-3:ripple_inverter{lay}'
+VDD VDD 0 DC 3.3 
+VGND GND 0 DC 0
+VIN In 0 PULSE(3.3 0 0 100p 100p 10n 20n)
+.TRAN 0 50n
+.include C:\electric\MOS_model.txt
+.END

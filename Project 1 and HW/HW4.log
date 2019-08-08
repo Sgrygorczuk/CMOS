@@ -1,0 +1,27 @@
+Circuit: *** SPICE deck for cell HW4{lay} from library HW4
+
+Vgnd: both pins shorted together -- ignoring.
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Direct Newton iteration for .op point succeeded.
+
+Date: Mon Apr 29 10:04:13 2019
+Total elapsed time: 0.132 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 3023
+traniter = 3014
+tranpoints = 1423
+accept = 1335
+rejected = 88
+matrix size = 17
+fillins = 2
+solver = Normal
+Matrix Compiler1: 946 bytes object code size  0.3/0.2/[0.1]
+Matrix Compiler2: 1.50 KB object code size  0.1/0.2/[0.1]
+
+

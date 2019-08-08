@@ -1,0 +1,36 @@
+Circuit: *** SPICE deck for cell ripple_inverter{lay} from library HW-3
+
+Vgnd: both pins shorted together -- ignoring.
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+WARNING: Node NMOS@2_N-TRANS-WELL is floating.
+WARNING: Node NMOS@3_N-TRANS-WELL is floating.
+WARNING: Node PMOS@3_P-TRANS-WELL is floating.
+WARNING: Node PMOS@5_P-TRANS-WELL is floating.
+
+WARNING: Less than two connections to node NMOS@2_N-TRANS-WELL.  This node is used by MNMOS@2.
+WARNING: Less than two connections to node NMOS@3_N-TRANS-WELL.  This node is used by MNMOS@3.
+WARNING: Less than two connections to node PMOS@3_P-TRANS-WELL.  This node is used by MPMOS@3.
+WARNING: Less than two connections to node PMOS@5_P-TRANS-WELL.  This node is used by MPMOS@5.
+Direct Newton iteration for .op point succeeded.
+
+Date: Mon Mar 25 00:02:11 2019
+Total elapsed time: 0.255 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2667
+traniter = 2640
+tranpoints = 1233
+accept = 1165
+rejected = 68
+matrix size = 10
+fillins = 4
+solver = Normal
+Matrix Compiler1: 830 bytes object code size  0.2/0.1/[0.1]
+Matrix Compiler2: off  [0.1]/0.1/0.2
+
+
