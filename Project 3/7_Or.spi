@@ -1,0 +1,49 @@
+*** SPICE deck for cell 7_Or{lay} from library Project_3
+*** Created on Fri May 10, 2019 14:03:20
+*** Last revised on Sat May 11, 2019 11:44:20
+*** Written on Sat May 11, 2019 11:44:29 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** TOP LEVEL CELL: 7_Or{lay}
+Mnmos@0 O net@11 gnd gnd N L=0.7U W=1.75U AS=14.47P AD=4.9P PS=19.162U PD=9.1U
+Mnmos@1 gnd I0 net@11 gnd N L=0.7U W=1.75U AS=3.752P AD=14.47P PS=6.475U PD=19.162U
+Mnmos@2 net@11 I1 gnd gnd N L=0.7U W=1.75U AS=14.47P AD=3.752P PS=19.162U PD=6.475U
+Mnmos@3 gnd I2 net@11 gnd N L=0.7U W=1.75U AS=3.752P AD=14.47P PS=6.475U PD=19.162U
+Mnmos@4 net@11 I3 gnd gnd N L=0.7U W=1.75U AS=14.47P AD=3.752P PS=19.162U PD=6.475U
+Mnmos@5 gnd I4 net@11 gnd N L=0.7U W=1.75U AS=3.752P AD=14.47P PS=6.475U PD=19.162U
+Mnmos@6 net@11 I5 gnd gnd N L=0.7U W=1.75U AS=14.47P AD=3.752P PS=19.162U PD=6.475U
+Mnmos@7 gnd I6 net@11 gnd N L=0.7U W=1.75U AS=3.752P AD=14.47P PS=6.475U PD=19.162U
+Mpmos@0 O net@11 vdd vdd P L=0.7U W=1.75U AS=56.35P AD=4.9P PS=60.2U PD=9.1U
+Mpmos@1 vdd I0 net@70 vdd P L=0.7U W=1.75U AS=3.369P AD=56.35P PS=5.6U PD=60.2U
+Mpmos@2 net@70 I1 net@77 vdd P L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mpmos@3 net@77 I2 net@69 vdd P L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mpmos@4 net@69 I3 net@45 vdd P L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mpmos@5 net@45 I4 net@13 vdd P L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mpmos@6 net@13 I5 net@74 vdd P L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mpmos@7 net@74 I6 net@11 vdd P L=0.7U W=1.75U AS=3.752P AD=3.369P PS=6.475U PD=5.6U
+
+* Spice Code nodes in cell cell '7_Or{lay}'
+VDD VDD 0 DC 3.3 
+VGND GND 0 DC 0
+VIN2 I0 0 PULSE(3.3 0 0 1n 1n 10n 20n)
+VIN3 I1 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+VIN4 I2 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+VIN5 I3 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+VIN6 I4 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+VIN7 I5 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+VIN8 I6 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+VIN9 I7 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+VIN10 I8 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+VIN11 I9 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+VIN12 I10 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+VIN13 I11 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+VIN14 I12 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+VIN15 I13 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+VIN16 I14 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+VIN17 I15 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+VIN18 I16 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+VIN19 I17 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+.TRAN 0 20n
+.include C:\electric\MOS_model.txt
+.END

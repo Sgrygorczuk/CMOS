@@ -1,0 +1,26 @@
+*** SPICE deck for cell 3_Or{lay} from library Project_3
+*** Created on Fri May 10, 2019 14:02:53
+*** Last revised on Sat May 11, 2019 11:41:46
+*** Written on Sat May 11, 2019 11:41:52 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** TOP LEVEL CELL: 3_Or{lay}
+Mnmos@0 O net@1 gnd gnd N L=0.7U W=1.75U AS=16.384P AD=4.9P PS=22.225U PD=9.1U
+Mnmos@1 gnd I0 net@1 gnd N L=0.7U W=1.75U AS=4.134P AD=16.384P PS=7.35U PD=22.225U
+Mnmos@2 net@1 I1 gnd gnd N L=0.7U W=1.75U AS=16.384P AD=4.134P PS=22.225U PD=7.35U
+Mnmos@3 gnd I2 net@1 gnd N L=0.7U W=1.75U AS=4.134P AD=16.384P PS=7.35U PD=22.225U
+Mpmos@0 O net@1 vdd vdd P L=0.7U W=1.75U AS=29.4P AD=4.9P PS=38.85U PD=9.1U
+Mpmos@1 vdd I0 net@29 vdd P L=0.7U W=1.75U AS=3.369P AD=29.4P PS=5.6U PD=38.85U
+Mpmos@2 net@29 I1 net@33 vdd P L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mpmos@3 net@33 I2 net@1 vdd P L=0.7U W=1.75U AS=4.134P AD=3.369P PS=7.35U PD=5.6U
+
+* Spice Code nodes in cell cell '3_Or{lay}'
+VDD VDD 0 DC 3.3 
+VGND GND 0 DC 0
+VIN2 I0 0 PULSE(3.3 0 0 1n 1n 10n 20n)
+VIN3 I1 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+VIN4 I2 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+.TRAN 0 20n
+.include C:\electric\MOS_model.txt
+.END

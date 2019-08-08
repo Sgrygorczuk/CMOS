@@ -1,0 +1,38 @@
+Circuit: *** SPICE deck for cell 7_Or{lay} from library Project_3
+
+Vgnd: both pins shorted together -- ignoring.
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+WARNING: Less than two connections to node I7.  This node is used by VIN9.
+WARNING: Less than two connections to node I8.  This node is used by VIN10.
+WARNING: Less than two connections to node I9.  This node is used by VIN11.
+WARNING: Less than two connections to node I10.  This node is used by VIN12.
+WARNING: Less than two connections to node I11.  This node is used by VIN13.
+WARNING: Less than two connections to node I12.  This node is used by VIN14.
+WARNING: Less than two connections to node I13.  This node is used by VIN15.
+WARNING: Less than two connections to node I14.  This node is used by VIN16.
+WARNING: Less than two connections to node I15.  This node is used by VIN17.
+WARNING: Less than two connections to node I16.  This node is used by VIN18.
+WARNING: Less than two connections to node I17.  This node is used by VIN19.
+Direct Newton iteration for .op point succeeded.
+
+Date: Sat May 11 11:44:29 2019
+Total elapsed time: 0.171 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2129
+traniter = 2122
+tranpoints = 1057
+accept = 1053
+rejected = 4
+matrix size = 46
+fillins = 0
+solver = Normal
+Matrix Compiler1: 1.50 KB object code size  0.4/0.2/[0.2]
+Matrix Compiler2: 3.27 KB object code size  0.3/0.4/[0.2]
+
+

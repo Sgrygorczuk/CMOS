@@ -1,0 +1,44 @@
+*** SPICE deck for cell 9_Or{lay} from library Project_3
+*** Created on Fri May 10, 2019 14:03:26
+*** Last revised on Sat May 11, 2019 11:45:17
+*** Written on Sat May 11, 2019 11:45:22 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** TOP LEVEL CELL: 9_Or{lay}
+Mnmos@0 O net@3 gnd gnd N L=0.7U W=1.75U AS=13.475P AD=4.9P PS=17.85U PD=9.1U
+Mnmos@1 gnd I0 net@3 gnd N L=0.7U W=1.75U AS=3.675P AD=13.475P PS=6.3U PD=17.85U
+Mnmos@2 net@3 I1 gnd gnd N L=0.7U W=1.75U AS=13.475P AD=3.675P PS=17.85U PD=6.3U
+Mnmos@3 gnd I2 net@3 gnd N L=0.7U W=1.75U AS=3.675P AD=13.475P PS=6.3U PD=17.85U
+Mnmos@4 net@3 I3 gnd gnd N L=0.7U W=1.75U AS=13.475P AD=3.675P PS=17.85U PD=6.3U
+Mnmos@5 gnd I4 net@3 gnd N L=0.7U W=1.75U AS=3.675P AD=13.475P PS=6.3U PD=17.85U
+Mnmos@6 net@3 I5 gnd gnd N L=0.7U W=1.75U AS=13.475P AD=3.675P PS=17.85U PD=6.3U
+Mnmos@7 gnd I6 net@3 gnd N L=0.7U W=1.75U AS=3.675P AD=13.475P PS=6.3U PD=17.85U
+Mnmos@8 net@3 I7 gnd gnd N L=0.7U W=1.75U AS=13.475P AD=3.675P PS=17.85U PD=6.3U
+Mnmos@9 gnd I8 net@3 gnd N L=0.7U W=1.75U AS=3.675P AD=13.475P PS=6.3U PD=17.85U
+Mpmos@0 O net@3 vdd vdd P L=0.7U W=1.75U AS=63.7P AD=4.9P PS=67.2U PD=9.1U
+Mpmos@1 vdd I0 net@87 vdd P L=0.7U W=1.75U AS=3.369P AD=63.7P PS=5.6U PD=67.2U
+Mpmos@2 net@87 I1 net@96 vdd P L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mpmos@3 net@96 I2 net@16 vdd P L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mpmos@4 net@16 I3 net@61 vdd P L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mpmos@5 net@61 I4 net@31 vdd P L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mpmos@6 net@31 I5 net@90 vdd P L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mpmos@7 net@90 I6 net@41 vdd P L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mpmos@8 net@41 I7 net@19 vdd P L=0.7U W=1.75U AS=3.369P AD=3.369P PS=5.6U PD=5.6U
+Mpmos@9 net@19 I8 net@3 vdd P L=0.7U W=1.75U AS=3.675P AD=3.369P PS=6.3U PD=5.6U
+
+* Spice Code nodes in cell cell '9_Or{lay}'
+VDD VDD 0 DC 3.3 
+VGND GND 0 DC 0
+VIN2 I0 0 PULSE(3.3 0 0 1n 1n 10n 20n)
+VIN3 I1 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+VIN4 I2 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+VIN5 I3 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+VIN6 I4 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+VIN7 I5 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+VIN8 I6 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+VIN9 I7 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+VIN10 I8 0 PULSE(3.3 0 0 1n 1n 40n 80n)
+.TRAN 0 20n
+.include C:\electric\MOS_model.txt
+.END
